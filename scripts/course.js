@@ -77,3 +77,42 @@ const courses = [
         completed: false
     }
 ]
+const courseout = document.querySelector("#coursesList")
+
+// Function to display all courses
+document.querySelector('#all').addEventListener('click', () => {
+    displayCourses(courses)
+});
+
+// display wdd courses
+document.querySelector('#wdd').addEventListener('click', () => {
+    const result = courses.filter((course) => course.subject === 'WDD');
+    displayCourses(result)
+});
+
+// display cse courses
+document.querySelector('#cse').addEventListener('click', () => {
+    const result = courses.filter((course) => course.subject === 'CSE');
+    displayCourses(result)
+});
+
+function displayCourses(filteredcourses) {
+    courseout.innerHTML = '';
+    filteredcourses.forEach(crs => {
+
+        const courseCard = document.createElement('div')
+        switch (crs.completed) {
+            case true:
+                courseCard.className = "complete"
+                break;
+            default:
+                courseCard.className = "needed"
+        }
+
+        courseCard.innerHTML = `${crs.subject} ${crs.number}`
+
+        courseout.appendChild(courseCard)
+    });
+}
+
+displayCourses(courses)

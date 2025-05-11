@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="stylesheet" href="styles/normalice.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
 
     <script src="scripts/course.js" defer></script>
@@ -26,56 +27,57 @@
 
 <body>
     <header>
-        <img src="/images/photo.jpeg" alt="" width="100px" height="100px">
-        <span class="highlight">Pablo A. Heredia</span>
-        <a id="menuButton" href="#"></a>
-        <nav class="bar" id="bar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="chamber.html">Chamber</a></li>
-                <li><a href="final.html">Final</a></li>
-                <li><a href="https://github.com/profepabloheredia/wdd231">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/herediapabloalejandro/">LinkedIn</a></li>
+        <div class="profile" id="profile">
+            <img src="/images/photo.jpeg" alt="Profile img" width="100px" height="100px" class="profile_img">
+            <span class="highlight">Pablo A. Heredia </span>
+            <!-- <a id="menuButton" href="#"></a> -->
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
 
-            </ul>
+        <nav id="primary-nav">
+            <a href="#">Home</a>
+            <a href="chamber.html">Chamber</a>
+            <a href="final.html">Final</a>
+            <a href="https://github.com/profepabloheredia/wdd231">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/herediapabloalejandro/">LinkedIn</a>
         </nav>
 
     </header>
 
+
     <main>
         <h1>Home</h1>
-
-        <div>
-            <section class="card" id="section1">
-                <h2>About Me</h2>
+        <div class="general">
+            <section class="card" id="courseWork">
+                <h2>Course Work</h2>
+                <ul>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ul>
             </section>
 
-            <section class="card" id="section2">
-                <h2>About Me</h2>
-
+            <section class="card" id="location">
+                <h2>Cordoba, Argentina</h2>
+                <div class="country_info">
+                    <figure class="image-caption">
+                        <img src="images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
+                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
+                    </figure>
+                </div>
             </section>
-
-            <section class="card" id="section3">
-                <h2>About Me</h2>
-
-            </section>
-
-
         </div>
         <div>
-            <aside class="box1">
-                <img src="images/profile.png" alt="PABLO HEREDIA " width="200">
-            </aside>
+            <section class="card" id="certificates">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="resources">
+                    <button id="all">All Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
+                </div>
+                <section id="coursesList"></section>
+            </section>
         </div>
-        <div class="cityCentered">
-            <h3>Córdoba, Argentina</h3>
-        </div>
-        <div>
-            <aside class="box2">
-                <img src="images/cordoba.jpg" alt="Cordoba city">
-            </aside>
-        </div>
-
     </main>
 
     <footer>
