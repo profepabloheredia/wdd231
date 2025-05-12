@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,6 +77,7 @@ const courses = [
         completed: false
     }
 ]
+const creditsSection = document.querySelector("#creditsSection")
 const courseout = document.querySelector("#coursesList")
 
 // Function to display all courses
@@ -97,22 +98,34 @@ document.querySelector('#cse').addEventListener('click', () => {
 });
 
 function displayCourses(filteredcourses) {
-    courseout.innerHTML = '';
+
+    creditsSection.innerHTML = ' ';
+    const credits = document.createElement('h4')
+    const totalCredits = filteredcourses.reduce((acum, credits) => {
+        return acum + credits.credits;
+    }, 0);
+    credits.innerHTML = `Total number of required credits:  ${totalCredits}.`;
+    creditsSection.appendChild(credits)
+
+    courseout.innerHTML = ' ';
     filteredcourses.forEach(crs => {
 
         const courseCard = document.createElement('div')
         switch (crs.completed) {
             case true:
-                courseCard.className = "complete"
+                courseCard.className = "complete";
+                courseCard.style.backgroundColor = `var(--list-completed-color)`;
+
                 break;
             default:
-                courseCard.className = "needed"
+                courseCard.className = "needed";
         }
 
-        courseCard.innerHTML = `${crs.subject} ${crs.number}`
+        courseCard.innerHTML = `${crs.subject} ${crs.number}  (${crs.credits} credits)`
 
         courseout.appendChild(courseCard)
     });
+
 }
 
 displayCourses(courses)
