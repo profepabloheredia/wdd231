@@ -100,7 +100,7 @@ document.querySelector('#cse').addEventListener('click', () => {
 function displayCourses(filteredcourses) {
 
     creditsSection.innerHTML = ' ';
-    const credits = document.createElement('h4')
+    const credits = document.createElement('p')
     const totalCredits = filteredcourses.reduce((acum, credits) => {
         return acum + credits.credits;
     }, 0);
