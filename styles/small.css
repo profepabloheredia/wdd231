@@ -87,8 +87,6 @@ header span {
 main {
     font-family: "Open Sans", sans-serif;
     display: grid;
-    /* grid-template-rows: 1fr; */
-    /* grid-template-columns: repeat(2, 1fr); */
 }
 
 .general {
@@ -102,8 +100,6 @@ h1 {
     color: var(--secondary-color);
     margin-top: 0%;
 }
-
-
 
 .card {
     padding: 0;
@@ -129,6 +125,7 @@ h1 {
     padding: 5px;
     margin: 0;
     border-radius: 20px;
+    text-align: center;
 }
 
 .card p {
@@ -138,7 +135,6 @@ h1 {
 #courseWork {
     border: #eee;
     margin: .5rem 10px;
-    /* overflow: hidden; */
     align-items: center;
 }
 
@@ -154,29 +150,35 @@ ul {
 
 figure {
     padding: 0;
-    max-width: 220px;
+    /* max-width: 220px; */
     margin: 0;
     text-align: center;
 }
-
 
 .resources {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
     padding: 1em;
+
+}
+
+.resources>button {
+    font-weight: bold;
 }
 
 .resources button:hover {
     text-decoration: none;
-    color: purple;
-    background-color: var(--tertiary-color);
+    color: black;
     font-weight: bold;
+    font-size: larger;
+    font-style: oblique;
+    transition: .3s;
 }
 
 @keyframes color_change {
     0% {
-        background-color: #8088d1;
+        background-color: #aeb3e4;
     }
 
     50% {
@@ -240,6 +242,7 @@ footer p {
 #creditsSection p {
     text-align: center;
     font-style: italic;
+    font-weight: bold;
 }
 
 
