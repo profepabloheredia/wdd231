@@ -2,7 +2,7 @@
     --primary-color: white;
     --secondary-color: rgb(74, 21, 124);
     --tertiary-color: rgb(204, 202, 202);
-    --list-completed-color:#ece036;
+    --list-completed-color: #ece036;
     --accent-color: #292c2eea;
     --accent-color2: #f4f800;
 }
@@ -50,8 +50,8 @@ nav a {
 nav a:hover {
     background-color: var(--secondary-color);
     /* background: radial-gradient(#530985fb, var(--accent-color)); */
-    border: 1px solid var(--accent-color2);  
-   
+    border: 1px solid var(--accent-color2);
+
 }
 
 #profile {
@@ -236,7 +236,8 @@ footer p {
     font-family: "Open Sans", sans-serif;
     font-weight: 100;
 }
-#creditsSection p{
+
+#creditsSection p {
     text-align: center;
     font-style: italic;
 }
