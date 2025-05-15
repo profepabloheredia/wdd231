@@ -34,7 +34,7 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('height', '440');
 
         // Append the section(card) with the created elements
-        card.appendChild(fullName); //fill in the blank
+        card.appendChild(fullName); 
         card.appendChild(birthDate);
         card.appendChild(placeOfBirth);
         card.appendChild(portrait);
