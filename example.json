@@ -1,0 +1,28 @@
+{
+    "familyName": "Brown",
+    "date": "05/12/2025",
+    "records": 5,
+    "visited": "false",
+    "familyMembers": [
+        {
+        "name": "Juan Perez",
+        "gender": "Male",
+        "birth": "10/10/1995"
+        },
+        {
+        "name": "Sariah Lucias",
+        "gender": "Female",
+        "birth": "8/18/1998"
+        },
+        {
+        "name": "Evelyn Perez",
+        "gender": "female",
+        "birth": "07/22/2017"
+        },
+        {
+        "name": "Brian Perez",
+        "gender": "Male",
+        "birth": "04/10/2019"
+        }
+    ]
+}
