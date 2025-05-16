@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Heredia">
+    <meta name="description" content="Chamber of commerce: Web Frontend Development I - Pablo A. Heredia">
+    <title>Chamber of commerce: Web Frontend Development I - Pablo A. Heredia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <link rel="stylesheet" href="styles/normalice.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+    <meta property="og:title" content="Chamber of commerce">
+    <meta property="og:description"
+        content="This site let you to get soported by peers from a chamber of commerce and exchange information.">
+    <meta property="og:url" content="https://profepabloheredia.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://profepabloheredia.github.io/wdd231/favicon.ico" />
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apple">
+</head>
+
+<body>
+    <header>
+        <div class="profile" id="profile">
+            <img src="./images/photo.jpeg" alt="Profile img" class="profile_img">
+            <span>Pablo A. Heredia </span>
+            <!-- <a id="menuButton" href="#"></a> -->
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+
+        <nav id="primary-nav">
+            <a href="#">Home</a>
+            <a href="chamber.html">Chamber</a>
+            <a href="final.html">Final</a>
+            <a href="https://github.com/profepabloheredia/wdd231">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/herediapabloalejandro/">LinkedIn</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <h1>Home</h1>
+        <div class="general">
+            <section class="card" id="courseWork">
+                <h2>Course Work</h2>
+                <ul>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ul>
+            </section>
+
+            <section class="card" id="location">
+                <h2>Cordoba, Argentina</h2>
+                <div class="country_info">
+                    <figure class="image-caption">
+                        <img src="./images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
+                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="card" id="certificates">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="resources">
+                    <button id="all" title="Show all courses">All Courses</button>
+                    <button id="wdd" title="Only WDD courses">WDD Courses</button>
+                    <button id="cse" title="Only CSE courses">CSE Courses</button>
+                </div>
+                <section id="creditsSection"></section>
+                <section id="coursesList"></section>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> ✨ Pablo Heredia ✨ Cordoba, Argentina</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
