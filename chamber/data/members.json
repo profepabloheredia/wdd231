@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Shiz Sheep Shearing",
+            "address": "106 Fall St, Baja, California",
+            "phone": "555-555-5551",
+            "url": "http://fallstreetbrewing.square.site",
+            "image": "logo1.webp",
+            "level": 1
+        },
+        {
+            "name": "Manti Metal Works",
+            "address": "123 Maple Street, Baja, California",
+            "phone": "555-555-5552",
+            "url": "https://sleepbarristers.com/",
+            "image": "logo2.webp",
+            "level": 2
+        },
+        {
+            "name": "Teomner Tree Foundation",
+            "address": "20 E Bayard St, Baja, California",
+            "phone": "555-555-5553",
+            "url": "https://xixcafe.com/menu/breakfast/",
+            "image": "logo3.webp",
+            "level": 3
+        },
+        {
+            "name": "Hagoth Shipping",
+            "address": "19 Green St, Baja,  California",
+            "phone": "555-555-5554",
+            "url": "https://www.stephaniecourtapartments.com/",
+            "image": "logo4.webp",
+            "level": 3
+        },
+        {
+            "name": "Zarahemla City Offices",
+            "address": "39 Bridge St, Seneca Falls, California",
+            "phone": "+555-555-5555",
+            "url": "https://www.deweysthirdward.com/",
+            "image": "logo5.webp",
+            "level": 2
+        },
+        {
+            "name": "Gidgiddoni Greenhouses and Floral",
+            "address": "232 Gravel Rd, Baja, California",
+            "phone": "555-555-5556",
+            "url": "http://www.mpgraphicsny.com/",
+            "image": "logo6.webp",
+            "level": 1
+        },
+        {
+            "name": "Mulek Martial Arts",
+            "address": "1025 Edge Road, Baja, California",
+            "phone": "555-555-5557",
+            "url": "https://wilsonpress.com/",
+            "image": "logo7.webp",
+            "level": 3
+        }
+    ]
+}
