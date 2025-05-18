@@ -178,9 +178,8 @@ h1 {
     width: 100%;
     font-size: 1.3em;
 }
- .cards {
-    
-} 
+
+
 .card {
     padding: 0;
     margin: 5px;
@@ -305,21 +304,6 @@ figure {
 }
 
 
-footer {
-    display: grid;
-    justify-content: center;
-    background-color: var(--secondary-color);
-    padding: 1rem;
-
-}
-
-footer p {
-    font-family: var(--primary-font);
-    text-align: center;
-    color: white;
-    font-weight: 400;
-}
-
 #lastModified {
     color: var(--accent-color2);
     font-size: 0.8em;
@@ -332,6 +316,42 @@ footer p {
     font-style: italic;
     font-weight: bold;
 }
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    width: 100%;
+}
+    
+footer>div>div>p {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+#socials {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        gap: 10px;
+}
+#socials>a {
+        border: solid;
+        border-color: var(--primary-color);
+        border-width: 3px;
+        border-radius: 15%;
+        background-color: var(--primary-color);
+        
+        
+} 
+#socials>a>img {
+        width: 50px;
+        height: auto;
+        border: none;
+        margin: 0%;
+        padding: 0%;
+} 
+
 
 
 @media (max-width: 700px) {
@@ -401,4 +421,12 @@ footer p {
         display: block;
         padding: 0.5rem 0;
     }
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    footer>div>div>p {text-align: center;}
+    
+    
 }

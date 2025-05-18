@@ -3,15 +3,17 @@
         {
             "name": "Shiz Sheep Shearing",
             "address": "106 Fall St, Baja, California",
-            "phone": "555-555-5551",
+            "email":"example1@email.com",
+            "phone": "123-456-7891",
             "url": "http://fallstreetbrewing.square.site",
             "image": "logo1.webp",
             "level": 1
         },
         {
-            "name": "Manti Metal Works",
-            "address": "123 Maple Street, Baja, California",
-            "phone": "555-555-5552",
+            "name": "Encore",
+            "address": "1725 E G St, Ontario, CA 91764",
+            "email":"example2@email.com",
+            "phone": "123-456-7892",
             "url": "https://sleepbarristers.com/",
             "image": "logo2.webp",
             "level": 2
@@ -19,42 +21,56 @@
         {
             "name": "Teomner Tree Foundation",
             "address": "20 E Bayard St, Baja, California",
-            "phone": "555-555-5553",
+            "email":"example3@email.com",
+            "phone": "123-456-7893",
             "url": "https://xixcafe.com/menu/breakfast/",
             "image": "logo3.webp",
             "level": 3
         },
         {
-            "name": "Hagoth Shipping",
-            "address": "19 Green St, Baja,  California",
-            "phone": "555-555-5554",
-            "url": "https://www.stephaniecourtapartments.com/",
+            "name": "Green Energy Solutions",
+            "address": "456 Solar Drive, Austin, TX 73301, USA",
+            "email":"example4@email.com",
+            "phone": "123-456-7894",
+            "url": "https://www.greenenergy.com",
             "image": "logo4.webp",
-            "level": 3
+            "level": 2
         },
         {
             "name": "Zarahemla City Offices",
             "address": "39 Bridge St, Seneca Falls, California",
-            "phone": "+555-555-5555",
+            "email":"example5@email.com",
+            "phone": "123-456-7895",
             "url": "https://www.deweysthirdward.com/",
             "image": "logo5.webp",
             "level": 2
         },
         {
-            "name": "Gidgiddoni Greenhouses and Floral",
-            "address": "232 Gravel Rd, Baja, California",
-            "phone": "555-555-5556",
-            "url": "http://www.mpgraphicsny.com/",
+            "name": "Fresh Foods Market",
+            "address": "404 Main St, San Francisco, CA 94105, USA",
+            "email":"example6@email.com",
+            "phone": "123-456-7896",
+            "url": "https://www.freshfoodsmarket.com",
             "image": "logo6.webp",
             "level": 1
         },
         {
             "name": "Mulek Martial Arts",
             "address": "1025 Edge Road, Baja, California",
-            "phone": "555-555-5557",
+            "email":"example7@email.com",
+            "phone": "123-456-7897",
             "url": "https://wilsonpress.com/",
             "image": "logo7.webp",
             "level": 3
-        }
-    ]
+        },
+        {
+            "name": "Encore",
+            "address": "1725 E G St, Ontario, CA 91764",
+            "email":"example8@email.com",
+            "phone": "123-456-7892",
+            "url": "https://sleepbarristers.com/",
+            "image": "logo2.webp",
+            "level": 2
+        }
+    ]
 }

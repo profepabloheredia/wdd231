@@ -12,12 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link rel="stylesheet" href="styles/normalice.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
 
@@ -34,7 +33,7 @@
 <body>
     <header>
         <div class="profile" id="profile">
-            <img src="./images/photo.jpeg" alt="Profile img" class="profile_img">
+            <img src="./images/chamberComerceImageMedium.jpg" alt="Profile img" class="profile_img">
             <span>Pablo A. Heredia </span>
             <!-- <a id="menuButton" href="#"></a> -->
             <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
@@ -48,15 +47,12 @@
             <a href="https://www.linkedin.com/in/herediapabloalejandro/">LinkedIn</a>
         </nav>
         
-
-
     </header>
 
     <main>
         <section class="hero">
-                <img src="/chamber/images/hero-chamber.jpg" alt="">
+                <img src="/chamber/images/hero-chamber2.jpg" alt="">
                 <button type="button" class="hero-button" onclick="location.href='tours.html'"> Key Notes Ticket  &raquo;</button>
-            
         </section>
         <h1>Home</h1>
         <div class="home">
@@ -89,9 +85,9 @@
         </div>
 
 
-        <div class="cards">
+        <div id="cards" ></div>
 
-             <section class="card" id="location">
+             <!-- <section class="card" id="location">
                 <h2>Cordoba, Argentina</h2>
                 <h5>Business tag line</h5>
                 <div class="country_info">
@@ -118,18 +114,44 @@
                         <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
                     </figure>
                 </div>
-            </section>
+            </section> -->
 
           
-        </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <p><span id="currentyear"></span> ✨ Pablo Heredia ✨ Cordoba, Argentina</p>
         <p id="lastModified"></p>
 
-    </footer>
-
+    </footer> -->
+        <footer class="footer">
+            <div>
+                <div id="contact">
+                    <p><b>Timbuku Chamber of Commerce</b></p>
+                    <p>10 Rue de la Paix.</p>
+                    <p>Timbuku, Mali 999</p>
+                    <p>info@Timbukuchamber.org</p>
+                    <p>(+999)12345</p>
+                </div>
+                <div id="socials">
+                    <a href="https://www.youtube.com/user/TimbukuChamberCommerce" target="_blank">
+                        <img src="images/youtube.png" alt="youtube icon" width="64" height="64">
+                    </a>
+                    <a href="https://x.com/timbucochamber" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon" width="64" height="64">
+                    </a>
+                    <a href="https://www.linkedin.com/company/Timbuku-chamber-of-commerce/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin icon" width="64" height="64">
+                    </a>
+                </div>
+                <div id="info">
+                    <p>WDD231 Class Project</p>
+                    <p>Pablo Heredia</p>
+                    <p>&copy;<span id="currentyear">####</span> Timbuku Chamber of Commerce</p>
+                    <p id="lastModified">##/##/## ##:##:##</p>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

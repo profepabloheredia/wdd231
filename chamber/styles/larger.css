@@ -15,6 +15,39 @@
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        */
+        
+    }
+ 
+   footer>div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+    }
+
+    footer>div>div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    footer>div>div>p {text-align: left;}
+
+    #contact {
+        gap: 5.5px;
+        margin-top: 8px;
+        padding-left: 10px;
+    }
+
+    #socials {
+        flex-direction: row;
+        gap: 22px;
+        margin-top: 1rem;
+        padding-left: 3rem;
+        width: 100%;
+    }
+
+    #info {
+        gap: 6px;
+        margin-top: 16px;
+        padding-left: 48px;
     }
 }
