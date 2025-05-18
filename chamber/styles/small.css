@@ -42,6 +42,8 @@ main {
     height: auto;    
 }
 .hero-button {
+    width: 5rem;
+    height: auto;
     position: absolute;
     right: 10%;
     top: 70%;
@@ -95,13 +97,14 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     background-color: var(--secondary-color);
     padding: 10px;
 }
 
 nav a {
     color: white;
+    padding: .5rem;
     text-decoration: none;
     font-size: 1.3em;
     font-family: var(-);
