@@ -24,6 +24,8 @@ const displayMembers = (members) => {
         let memberUrl = document.createElement("p");
         let image = document.createElement('img');
 
+        card.setAttribute('class', 'card');
+
         // Build the h2 content out to show the member's name
         name.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
@@ -52,3 +54,5 @@ const displayMembers = (members) => {
     });
 }
 getMemberData();
+
+
