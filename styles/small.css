@@ -32,7 +32,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     padding: 10px;
 }
 
@@ -178,7 +178,7 @@ figure {
 
 @keyframes color_change {
     0% {
-        background-color: #aeb3e4;
+        background-color: #dcecfa;
     }
 
     50% {
@@ -186,7 +186,7 @@ figure {
     }
 
     100% {
-        background-color: #e7885b;
+        background-color: #e69a77;
     }
 }
 
