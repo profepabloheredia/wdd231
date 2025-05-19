@@ -23,7 +23,7 @@
     position: relative;
     width: 100vw;
     /* height: auto; */
-    display: flexbox;
+    /* display: flexbox; */
     justify-content: center;
     align-items: center;
     font-family: var(--primary-font);
@@ -224,12 +224,6 @@ h1 {
     overflow:hidden;
 }
 
-#event {
-    border: #eee;
-    margin: .5rem 10px;
-    align-items: left;
-}
-
 ul {
     padding: 0;
     margin-left: 50px;
@@ -425,10 +419,7 @@ section a {
     .resources {
         grid-template-columns: 1fr;
     }
-    .home, .cards {
-        display: inline-flexbox; 
-        flex-direction: row;
-    } 
+  
 
     .profile_info {
         grid-template-columns: 1fr;
@@ -491,5 +482,4 @@ section a {
     }
     footer>div>div>p {text-align: center;}
    
-    
 }
