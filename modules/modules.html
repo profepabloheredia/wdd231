@@ -1,0 +1,46 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modules Example: Course and Sections</title>
+  <link rel="stylesheet" href="styles/modules.css">
+  <script type="module" src="scripts/modules.js"></script>
+  <!-- <script src="scripts/modules.js" defer=""></script> -->
+</head>
+
+<body>
+  <main>
+  <h1 id="courseName">Web Frontend Development I</h1>
+  <h2 id="courseCode">WDD231</h2>
+
+  <div id="enrollment">
+    <p>Choose a section:</p>
+    <select id="sectionNumber">
+      <option value="0" disabled="" selected="">--</option>
+    <option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+    <button id="enrollStudent">Enroll a Student</button>
+    <button id="dropStudent">Drop a Student</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Section</th>
+        <th>Enrolled</th>
+        <th>Instructor</th>
+      </tr>
+    </thead>
+    <tbody id="sections"><tr>
+    <td>1</td>
+    <td>88</td>
+    <td>Brother Bingham</td></tr><tr>
+    <td>2</td>
+    <td>82</td>
+    <td>Sister Shultz</td></tr><tr>
+    <td>3</td>
+    <td>95</td>
+    <td>Sister Smith</td></tr></tbody>
+  </table>
+  </main>
+
+
+</body></html>

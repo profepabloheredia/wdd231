@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+main {
+  padding: 1rem;
+  background-color: #fff;
+  color: #333;
+  width: fit-content;
+  margin: 1rem auto;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+h1,
+h2 {
+  text-align: center;;
+  margin-bottom: 1.1rem;
+}
+
+form p {
+  margin: .5rem;
+  font-weight: bold;
+}
+
+#enrollment {
+  padding: 1rem 1rem 0 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  background-color: #bed;
+  text-align: center;
+}
+
+select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  width: 3rem;
+}
+
+button {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #0078d4;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+table {
+  margin-top: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #bbb;
+}
