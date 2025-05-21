@@ -3,22 +3,23 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const myKey="7806e6378615e3ce5201964e721cdac1";
-const lat="49.75";
-const long="6.64";
+const myKey = "set";
+const lat = "49.75";
+const long = "6.64";
 
 const url = "http://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&appid=7806e6378615e3ce5201964e721cdac1&units=metric";
-async function apiFetch() {  try {
+async function apiFetch() {
+  try {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
       console.log(data); // testing only
       displayResults(data); // uncomment when ready
     } else {
-        throw Error(await response.text());
+      throw Error(await response.text());
     }
   } catch (error) {
-      console.log(error);
+    console.log(error);
   }
 }
 function displayResults(data) {
