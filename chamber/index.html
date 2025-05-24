@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="icon" href="favicon.ico">
-    <!-- <script src="scripts/members.js" defer></script> -->
+    
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 
     <meta property="og:title" content="Chamber of commerce">
     <meta property="og:description"
@@ -56,67 +58,38 @@
         <h1>Home</h1>
         <div class="home">
             <section class="info" id="events">
-                <h2>Events</h2>
+                <!-- <h2>Events</h2> -->
+                <h2> Upcomming Events</h2>
                 <ul>
-                    <li> </li>
-                    <li> </li>
-                    <li> </li>
+                    <li><p> Tomorrow: 👉<b> TEDx - Claire Andersen - The art of Sell.</b></p> </li>
+                    <li><p> Tuesday :👉 <b> Importing taxes due date.</b></p> </li>
+                    <li><p>Saturday 5:00pm :👉  <b> Math Championship for youth.</b></p> </li>
                 </ul>
+                
+                
             </section>
             <section class="info" id="weather">
-                <h2>Cordoba, Argentina</h2>
-                <div class="country_info">
+                <h2>Weather Information</h2>
+                <div class="weather-info">
                     <figure class="image-caption">
-                        <img src="./images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
-                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
+                        <img src="" alt="" class="weather_img" id="weather_img">
                     </figure>
+                    <span id="weather-description"></span>    
                 </div>
             </section>
             <section class="info" id="forecast">
-                <h2>Cordoba, Argentina</h2>
-                <div class="country_info">
-                    <figure class="image-caption">
-                        <img src="./images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
-                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
-                    </figure>
+                <h2>Weather Forecast</h2>
+                 <div class="forecast_info">
+                    <span id="weather-forecast"></span>    
                 </div>
             </section>
         </div>
 
 
-        <div id="cards">
-            <section class="card" id="location">
-                <h2>Cordoba, Argentina</h2>
-                <div class="country_info">
-                    <figure class="image-caption">
-                        <img src="./images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
-                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
-                    </figure>
-                </div>
-            </section>
-            <section class="card" id="location">
-                <h2>Cordoba, Argentina</h2>
-                <div class="country_info">
-                    <figure class="image-caption">
-                        <img src="./images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
-                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
-                    </figure>
-                </div>
-            </section>
-            <section class="card" id="location">
-                <h2>Cordoba, Argentina</h2>
-                <div class="country_info">
-                    <figure class="image-caption">
-                        <img src="./images/cordoba.jpeg" alt="Cordoba image" class="country_img" id="country_img">
-                        <figcaption><em>Cordoba Argentina Entrance</em></figcaption>
-                    </figure>
-                </div>
-            </section>
-        </div>
-
+        
+        <div class="card" id="spotlights"></div>
 
     </main>
-
 
     <footer>
         <div class="divFooter">
@@ -125,7 +98,7 @@
                 <p>10 Rue de la Paix.</p>
                 <p>Timbuku, Mali 999</p>
                 <p>info@Timbukuchamber.org</p>
-                <p>(+999)12345</p>
+                <p>(+999)123456</p>
             </div>
             <div id="socials">
                 <a href="https://www.youtube.com/user/TimbukuChamberCommerce" target="_blank">
@@ -141,7 +114,7 @@
             <div id="info">
                 <p>WDD231 Class Project</p>
                 <p>Pablo Heredia</p>
-                <p>&copy;<span id="currentyear">####</span> Timbuku Chamber of Commerce</p>
+                <p><span id="currentyear">####</span> Timbuku Chamber of Commerce</p>
                 <p id="lastModified">##/##/## ##:##:##</p>
             </div>
         </div>
