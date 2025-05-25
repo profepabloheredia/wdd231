@@ -191,12 +191,14 @@ h1 {
 
 
 .card {
+    
     padding: 0;
     margin: 5px;
     border: 1px solid var(--tertiary-color);
     border-radius: 10px;
     box-shadow: 0 0 10px #aaa;
     text-align: center;
+    height: auto;
     
 }
 
@@ -219,7 +221,7 @@ h1 {
 }
 
 .card img {
-    padding: 5px;
+    padding: 2px;
     margin: 0;
     border-radius: 20px;
     text-align: center;
@@ -230,10 +232,10 @@ h1 {
     overflow:hidden;
 }
 
-ul {
+/* ul {
     padding: 0;
     margin-left: 50px;
-}
+} */
 
 
 

@@ -38,8 +38,8 @@ const displayMembers = (myArray) => {
 }
 
 function showData(member) {
-    const block = document.createElement('div')
-
+    const block = document.createElement('section')
+    block.className='card'
     const name= document.createElement('h2')
     name.innerHTML = member.name
     block.appendChild(name)
