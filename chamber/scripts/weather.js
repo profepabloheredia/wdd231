@@ -2,8 +2,6 @@
     const weatherIcon = document.querySelector('#weather_img');
     const report = document.querySelector('#weather-description');
     const forecast = document.querySelector('#weather-forecast');
-    // const currentTemp = document.querySelector('#current-temp');
-    // const captionDesc = document.querySelector('figcaption');
 
     const key = "937886d41113fc64e12d7ab470185586"
     const lat = "-30.99"
