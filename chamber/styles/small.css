@@ -50,7 +50,7 @@ main {
 }
 
 .hero-button {
-    width: 10rem;
+    width: auto;
     height: auto;
     position: absolute;
     right: 5%;
@@ -59,17 +59,19 @@ main {
     color: var(--primary-color);
     border: 1px solid #cb376a;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: .7rem;
     font-family: var(--secondary-font);
     font-size: 1.2rem;
     font-weight: 200;
     cursor: pointer;
-    border-radius: 15%;
+    border-radius: 20%;
+    
   
 }
 .hero-button:hover {
-    background-color: #cb376a;
-    border: 1px solid #db7598;
+    background-color: var(--secondary-color);
+    font-style: italic;
+   
 }
 .hero::before {
     content: "";
@@ -77,12 +79,8 @@ main {
     top: 0;
     left: 0;
    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    
 }
-
-
 
 
 p {
