@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Lab Start File">
+  <meta name="author" content="Paul Cheney">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <title>Web Lab Start File</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Temple Appointment</h1>
+
+    <form method="GET" action="thanks.html" class="designOne">
+      <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+        <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+        <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+        <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+  
+
+        <h3>Select Ordinance</h3>
+        <label><input type="radio" name="ordinance" value="Baptism" checked> Proxy Baptism</label>
+        <label><input type="radio" name="ordinance" value="Initiatory"> Proxy Initiatory</label>
+        <label><input type="radio" name="ordinance" value="Endowment"> Proxy Endowment</label>
+        <label><input type="radio" name="ordinance" value="Sealing"> Proxy Sealing</label>
+
+        
+        <h3>Date and Location</h3>
+        <label>Date <input type="date" name="date" required></label>
+
+        <label>Location
+          <select name="location" required>
+            <option value="">None</option>
+            <option value="Payson">Payson</option>
+            <option value="Orem">Orem</option>
+            <option value="Provo City Center">Provo City Center</option>
+        </label>
+
+        <input type="submit" value="Schedule An Appointment">
+    </form>
+
+    
+  </main>
+
+</body>
+</html>
