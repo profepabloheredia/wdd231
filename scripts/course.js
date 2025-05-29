@@ -97,6 +97,11 @@ document.querySelector('#cse').addEventListener('click', () => {
     displayCourses(result)
 });
 
+const courseDetails = document.querySelector("#course-details")
+const closeModal = document.querySelector(".close-button");
+
+
+
 function displayCourses(filteredcourses) {
 
     creditsSection.innerHTML = ' ';
@@ -124,8 +129,27 @@ function displayCourses(filteredcourses) {
         courseCard.innerHTML = `${crs.subject} ${crs.number}  (${crs.credits} credits)`
 
         courseout.appendChild(courseCard)
+        courseCard.addEventListener('click', () => {displayCourseDetail(crs);
+            });
+
     });
 
 }
+function displayCourseDetail(course){
+    courseDetails.innerhtmml ='';
+    courseDetails.innerHTML=`
+        <button class="close-button">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong> Credits </strong>${course.credits}</p>
+        <p><strong> Certificates </strong>${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Tecnologies </strong>${course.technology}</p>
+    
+    `;
+    courseDetails.showModal();
+    closeModal.addEventListener("click", () => {courseDetails.closeModal();});
+}
+
 
 displayCourses(courses)
