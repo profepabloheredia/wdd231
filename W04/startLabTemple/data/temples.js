@@ -1,6 +1,6 @@
 //https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/
 
-temples = [
+export const temples = [
     {
         "number": "1",
         "name": "St. George Utah Temple",

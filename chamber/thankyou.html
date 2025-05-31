@@ -52,60 +52,13 @@
     </header>
 
     <main>
-        <div class="formContainer">
-            <section class="aplicationForm">
-                <h1>Application Form</h1>
-                <form method="GET" action="thankyou.html" class="designForm">
-                    <label>First Name * <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                    <label>Last Name * <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
-                    <label>Email * <input type="email" name="email" required placeholder="peter1234@mydomain.com"  title="Your Email" autocomplete="email"></label>
-                    <label>Cell Phone * <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="012-345-6789" required autocomplete="movile-phone"></label>
-                    <label>Business/Organization's Name * <input type="text" name="organization" required autocomplete="organization" title="Your Organization Name"></label>
-                    <label>Business Decription<textarea name="description"></textarea></label>
-                    
-                    <label>
-                        <h4>Membership level</h4>
-                        <select name="level" required>
-                        <option value="none-profit">NP Membership is for non profit organizations and there is no fee</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                        </select>
-                    </label>
-                    <label class="required">* Required</label>
-                    <input type="submit" value="👉 Join to Us" class="submit">
-                    <label><input type="hidden" name="timestamp"id="timestamp"></label>       
-                </form>
-            </section>
-            <section class="levels">
-                <h1>Membership levels</h1>
-                <aside class="none">
-                    <h3>Non Profit Level</h3>
-                    <button id="btnNone">👉 Learn More 👈</button>
-                </aside>
-                <aside class="bronze">
-                    <h3>Bronze Level</h3>
-                    <button id="btnBronze">👉 Learn More 👈</button>
-                </aside>
-                <aside class="silver">
-                    <h3>Silver Level</h3>
-                    <button id="btnSilver">👉 Learn More 👈</button>
-                </aside>
-                <aside class="gold">
-                    <h3>Gold Level</h3>
-                    <button id="btnGold">👉 Learn More 👈</button>
-                </aside>
-                <dialog id="levelDialog">
-                    <div>
-                        <h3>
-                            <button id="closeButon">Close</button>
-                        </h3>
-                    </div>
-                    <span id="levelDetails"></span>
-                </dialog>
-            </section>
+        <div class="thanks"> 
+            <h1>Thanks for joining</h1>
+            <p>We appreciate you interest in joining to this chamber of commerce. We are sending your application by e-mail.</p>
         </div>
+        
+        <div id="results"></div>
+
     </main>
 
     <footer>

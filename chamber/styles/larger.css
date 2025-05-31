@@ -1,5 +1,6 @@
 @media (min-width: 700px) {
 
+    
     #hamburger-btn {
         display: none;
         cursor: pointer;
@@ -41,4 +42,14 @@
 
     #socials {margin: 1rem;
     }
+
+    .formContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+   
+
+
 }
