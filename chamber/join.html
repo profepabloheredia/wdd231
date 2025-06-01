@@ -20,8 +20,8 @@
     
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+    
+    
 
     <meta property="og:title" content="Chamber of commerce">
     <meta property="og:description"
@@ -60,22 +60,23 @@
                     <label>Last Name * <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
                     <label>Title <input type="text" name="title" autocomplete="organization-title" title="Your Title" pattern="[a-zA-Z0-9 -]{7,}"></label>
                     <label>Email * <input type="email" name="email" required placeholder="peter1234@mydomain.com"  title="Your Email" autocomplete="email"></label>
-                    <label>Cell Phone * <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="012-345-6789" required autocomplete="movile-phone"></label>
+                    <label>Cell Phone * <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="012-345-6789" required></label>
                     <label>Business/Organization's Name * <input type="text" name="organization" required autocomplete="organization" title="Your Organization Name"></label>
                     <label>Business Decription<textarea name="description"></textarea></label>
                     
                     <label>
-                        <h4>Membership level</h4>
+                        Membership level *
                         <select name="level" required>
-                        <option value="none-profit">NP Membership is for non profit organizations and there is no fee</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
+                            <option value="">..</option>
+                            <option value="noProfit">NP Membership is for non profit organizations and there is no fee</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
                         </select>
                     </label>
-                    <label class="required">* Required</label>
+                    <h4 class="required">* Required</h4>
                     <input type="submit" value="👉 Join to Us" class="submit">
-                    <label><input type="hidden" name="timestamp"id="timestamp"></label>       
+                    <label><input type="hidden" name="timestamp" id="timestamp"></label>       
                 </form>
             </section>
             <section class="levels">
@@ -97,15 +98,17 @@
                     <button id="btnGold">👉 Learn More 👈</button>
                 </aside>
                 <dialog id="levelDialog">
-                    <div>
-                        <h3>
-                            <button id="closeButon">Close</button>
-                        </h3>
+
+                    <div id="level">
+                        <h4 id="levelTitle"></h4>
+                        <button id="closeButton">X</button>                          
                     </div>
+                    
                     <span id="levelDetails"></span>
                 </dialog>
             </section>
         </div>
+        
     </main>
 
     <footer>
@@ -137,5 +140,5 @@
         </div>
     </footer>
 </body>
-
+<script src="scripts/levels.js"></script>
 </html>

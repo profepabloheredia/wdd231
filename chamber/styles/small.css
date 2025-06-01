@@ -409,10 +409,10 @@ form.designForm {margin: 1rem 2%;}
 }
 .levels>h1{margin-bottom: 2.5rem;}
 
-.bronze:hover{background-color: yellowgreen;}
-.silver:hover{background-color: silver;}
-.gold:hover{background-color: gold;}
-.none:hover{background-color: whitesmoke;}
+.bronze, .bronze:hover{background-color: yellowgreen;}
+.silver,.silver:hover{background-color: silver;}
+.gold, .gold:hover{background-color: gold;}
+.none, .none:hover{background-color: whitesmoke;}
 @keyframes slidein {
     0% {
       opacity: 0%;
@@ -426,42 +426,46 @@ form.designForm {margin: 1rem 2%;}
     }
   }
 
-/* #mlModal {
+ #levelDialog {
     position: relative;
     border: 2px solid #f27d80;
     border-radius: 8px;
     padding: .5rem;
-    background-color: #eee;
+    /* background-color: #eee; */
     box-shadow: 0 0 15px #777;
     width: 90%;
 }
 
-#mlModal div {
+#levelDialog div {
     display: grid;
     grid-template-columns: auto 44px;
     border-bottom: dashed 1px #aaa;
 }
   
-  #mlModal h4 {
+  #levelDialog h4 {
     font-size: 1.5rem;;
     font-weight: 500;
     margin: 0;
   }
-  #mlModal span {
+  #levelDialog span {
     font-size: 1rem;;
   }
   ::backdrop {
     background-color: rgba(255, 255, 255, 0.75);
   }
-  
-  #mlModal button {
+  /* #closeButton{
+   
+    text-align: right;
+  } */
+  #levelDialog button {
     width: 44px;
     height: 44px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     background-color: #ccc;
     font-size: 1.5rem;
-  } */
+    /* text-align: center;  */
+  } 
 
   @keyframes color_change {
 	0% {
