@@ -453,10 +453,7 @@ form.designForm {margin: 1rem 2%;}
   ::backdrop {
     background-color: rgba(255, 255, 255, 0.75);
   }
-  /* #closeButton{
-   
-    text-align: right;
-  } */
+ 
   #levelDialog button {
     width: 44px;
     height: 44px;
@@ -478,18 +475,16 @@ form.designForm {margin: 1rem 2%;}
 .designForm input:-webkit-autofill{
 -webkit-text-fill-color: #3D405B;
 }
-
+/* ************ Thanks *********** */
 #results {
-background-color: #F4F1DE;
+background-color: var(--tertiary-color);
 padding: 0 1rem;
 margin: 10px;
 border: 1px solid #E07A5F;
 border-radius: 6px;
 }
-/* ************ Thanks *********** */
-.thanks{
-    background-color: var(--tertiary-color);
-}
+
+.thanks{padding: 1rem;}
 
 
 @media (max-width: 700px) {

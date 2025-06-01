@@ -23,7 +23,7 @@ noProfit.addEventListener("click", () => {
     levelModal.setAttribute('class', 'none');
     levelModal.showModal();
 });
-// Modal 2 - not for profit
+
 
 bronze.addEventListener('click', () => {
     levelModal.showModal();
@@ -62,3 +62,7 @@ gold.addEventListener('click', () => {
     levelModal.setAttribute('class', 'gold');
     levelModal.showModal();
 });
+
+const currentTime = document.querySelector("#currentTime");
+const date = new Date().toLocaleString();
+currentTime.value = date
