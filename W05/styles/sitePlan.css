@@ -108,32 +108,27 @@
 
         .wireframe {
             border: 1px dashed var(--secondary-color);
-            padding: 20px;
-            margin: 10px;
-            min-width: 300px;
-            max-width: 45%;
+            padding: 10px;
+            margin: 5px;
+            min-width: 350px;
+            /* max-width: 50%; */
             box-sizing: border-box;
-            background-color: #fcfcfc;
+            background-color: #e0d2d2;
             border-radius: 5px;
+            justify-items: center;
         }
 
         .wireframe h4 {
             text-align: center;
             color: var(--primary-color);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
-        .wireframe pre {
-            background-color: #e9e9e9;
-            padding: 15px;
+        .wireframe img {
+                       
             border-radius: 5px;
             overflow-x: auto;
-            font-family: monospace;
-            white-space: pre-wrap; /* Allows line breaking for long lines */
-            word-wrap: break-word; /* Ensures long words break */
-            font-size: 0.9em;
-            color: #333;
-            border: 1px solid #ccc;
+            max-width: 100%;
         }
 
         @media (max-width: 768px) {
