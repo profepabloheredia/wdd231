@@ -1,7 +1,7 @@
     /* Color Schema */
         :root {
             --primary-color: #003366; /* Dark Blue */
-            --secondary-color:rgb(42, 42, 179); /* Medium Blue */
+            --secondary-color:#2a2aB3; /* Medium Blue */
             --accent-color: #FFCC00;   /* Amber */
             --background-color: #F5F5F5; /* Light Gray */
             --text-color: #333333; /* Darker gray for general text */
