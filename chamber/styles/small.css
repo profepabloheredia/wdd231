@@ -310,7 +310,7 @@ footer>div>div>p {
 .list section:nth-child(even) {
 	background-color: #bbb;
 }
-section h3 {
+section h3, section h2 {
 	font-size: 1.5rem;
 }
 section a {
@@ -358,6 +358,7 @@ form.designForm {margin: 1rem 2%;}
     border-top: 1px solid #eee;
     text-align: end;
     font-style: italic;
+    font-weight: bold;
 }
 
 .designForm input[type=text],
