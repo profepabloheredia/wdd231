@@ -1,14 +1,28 @@
 
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 701px) and (max-width:1250px) {
     /* Discover page */
     #places div {
+        display: grid;
         grid-template-areas: 
         "name name" 
         "photograph description"
         "photograph location"
         "button button"
+        
       }
+      /* grid-template-areas: 
+        "name name" 
+        "photograph description"
+        "photograph location"
+        "button button button"
+      } */
       #places div img {
         width: 300px;
+        height: auto;
       }
+      /* Discover page */
+     #places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
 } 

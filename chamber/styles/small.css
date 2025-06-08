@@ -384,7 +384,7 @@ form.designForm {margin: 1rem 2%;}
 .designForm input:focus {border-left-color: black; outline:none;}
 .designForm input:required:valid{border-left-color: green;}
 
-.designForm input[type=submit] {
+.designForm input[type=submit], .learnMore {
     border: 1px solid black;
     text-align: center;
     color: white;
@@ -492,9 +492,10 @@ border-radius: 6px;
     margin: 1rem 8px;
     padding: 10px;
     border: 1px solid #999;
-    background-color: #eee;
+    background-color: var(--tertiary-color);
     border-radius: 8px;
     overflow: hidden;
+    text-align: center; justify-items: center;
     
     display: grid;
     gap:10px;
@@ -512,8 +513,10 @@ border-radius: 6px;
   }
   #places div img {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     grid-area: photograph;
+    border-radius: 8px;
+    
   }
   #places div p {
     margin: 1rem 0px;
@@ -607,14 +610,22 @@ border-radius: 6px;
     }
     /* Discover page */
     #places div {
+        margin-left: 60px; margin-right: 60px;
+        grid-template-areas: 
+        "name " 
+        "photograph description"
+        "photograph location"
+        "button button"
+      }
+       /* #places div {
         grid-template-areas: 
         "name name" 
         "photograph description"
         "photograph location"
         "button button"
-      }
+      } */
       #places div img {
-        width: 300px;
+        width: 350px;
     }
    
 }

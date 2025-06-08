@@ -51,10 +51,14 @@
      #levelDialog {width: 700px;}
    
 
-     /* Discover page */
+     
+
+}
+@media (min-width: 1250px) {
+
+    /* Discover page */
      #places {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
        }
-
 }

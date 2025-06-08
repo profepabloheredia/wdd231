@@ -10,27 +10,33 @@ function displayItems(places) {
   places.forEach(x => {
     //build the card element
     const card = document.createElement('div')
+
     //build the photo element
     const photo = document.createElement('img')
     photo.src = `images/${x.photo_link}`
     photo.alt = x.name
     photo.setAttribute('loading', 'lazy');
     card.appendChild(photo)
+
     //build the title element
     const title = document.createElement('h2')
     title.innerText = x.name
     card.appendChild(title)
+
     //build the address element
     const address = document.createElement('address')
     address.innerText = x.address
     card.appendChild(address)
+
     //build the description element
     const description = document.createElement('p')
     description.innerHTML = `${x.description} <br><br>COST:  ${x.cost}`
     card.appendChild(description)
+
     //build the button
     const learnMore = document.createElement('button')
     learnMore.innerText = "Learn More"
+    learnMore.classList="learnMore"
     card.appendChild(learnMore)
 
 
