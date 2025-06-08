@@ -1,4 +1,4 @@
-export const places = [
+ export const places = [
     {
       "name": "Cumbrecita Tour",
       "description": "Discover Cumbrecita, a small alpine village nestled in the Sierras, Argentina's first pedestrian village.",

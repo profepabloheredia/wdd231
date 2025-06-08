@@ -1,9 +1,7 @@
-import { places } from '../data/places.mjs'
+import {places} from '../data/places.mjs'
 console.log(places);
 
 
-
-//---------- GRAB A REFERENCE TO THE DIVISION WHERE WE DISPLAY THE ITEMS 
 const showHere = document.querySelector("#places")
 
 
@@ -16,6 +14,7 @@ function displayItems(places) {
     const photo = document.createElement('img')
     photo.src = `images/${x.photo_link}`
     photo.alt = x.name
+    photo.setAttribute('loading', 'lazy');
     card.appendChild(photo)
     //build the title element
     const title = document.createElement('h2')
@@ -30,9 +29,9 @@ function displayItems(places) {
     description.innerHTML = `${x.description} <br><br>COST:  ${x.cost}`
     card.appendChild(description)
     //build the button
-    const knowMore = document.createElement('button')
-    knowMore.innerText = "know More"
-    card.appendChild(knowMore)
+    const learnMore = document.createElement('button')
+    learnMore.innerText = "Learn More"
+    card.appendChild(learnMore)
 
 
     showHere.appendChild(card)

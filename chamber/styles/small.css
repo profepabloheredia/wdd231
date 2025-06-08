@@ -487,6 +487,52 @@ border-radius: 6px;
 
 .thanks{padding: 1rem;}
 
+/***** DISCOVER PAGE HERE **********/
+#places div {
+    margin: 1rem 8px;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "name" 
+    "photograph"
+    "description"
+    "cost"
+    "location"
+    "button"
+  }
+  #places div h2 {
+    margin: 1rem 0px;
+    grid-area: name;
+  }
+  #places div img {
+    width: 100%;
+    max-width: 350px;
+    grid-area: photograph;
+  }
+  #places div p {
+    margin: 1rem 0px;
+    grid-area: description;
+  }
+  #places div address {
+    margin: 1rem 0px;
+    grid-area: location;
+  }
+  #places div button {
+    margin: 1rem 0px;
+    background-color: #d4295f;
+    color: #eee;
+    border:none;
+    border-radius: 30px;
+    padding: 1rem;
+    grid-area: button;
+  }
+
 
 @media (max-width: 700px) {
     main {
