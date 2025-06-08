@@ -1,0 +1,14 @@
+
+@media only screen and (min-width: 38rem) {
+    /* Discover page */
+    #places div {
+        grid-template-areas: 
+        "name name" 
+        "photograph description"
+        "photograph location"
+        "button button"
+      }
+      #places div img {
+        width: 300px;
+      }
+} 

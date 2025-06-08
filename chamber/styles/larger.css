@@ -51,5 +51,10 @@
      #levelDialog {width: 700px;}
    
 
+     /* Discover page */
+     #places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       }
 
 }

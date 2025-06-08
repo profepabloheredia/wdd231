@@ -559,5 +559,16 @@ border-radius: 6px;
         display: flex;
         flex-direction: column;
     }
+    /* Discover page */
+    #places div {
+        grid-template-areas: 
+        "name name" 
+        "photograph description"
+        "photograph location"
+        "button button"
+      }
+      #places div img {
+        width: 300px;
+    }
    
 }
