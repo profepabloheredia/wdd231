@@ -513,11 +513,11 @@ border-radius: 6px;
   }
   #places div img {
     width: 100%;
-    max-width: 320px;
+    max-width: 350px;
     grid-area: photograph;
     border-radius: 8px;
-    
   }
+  #places div img:hover {box-shadow: 0 0 50px #333;}
   #places div p {
     margin: 1rem 0px;
     grid-area: description;
@@ -535,6 +535,7 @@ border-radius: 6px;
     padding: 1rem;
     grid-area: button;
   }
+  #places div button:hover {box-shadow: 0 0 50px #333;}
 
 
 @media (max-width: 700px) {
