@@ -5,7 +5,6 @@ console.log(places);
 const showHere = document.querySelector("#places")
 
 
-// ---------------- LOOP THROUGH THE ARRAY OF JSON ITEMS 
 function displayItems(places) {
   places.forEach(x => {
     //build the card element
@@ -44,9 +43,8 @@ function displayItems(places) {
   }) 
 } 
 
-// START DISPLAYING ALL ITEMS IN THE JSON FILE
-displayItems(places)
 
+displayItems(places)
 
 
 // visit count
