@@ -536,6 +536,8 @@ border-radius: 6px;
     grid-area: button;
   }
   #places div button:hover {box-shadow: 0 0 50px #333;}
+  .visited>h2, #last_time{text-align: right; padding: 0px; margin:0%}
+  #last_time{ font-style: italic; font-weight: 200;}
 
 
 @media (max-width: 700px) {

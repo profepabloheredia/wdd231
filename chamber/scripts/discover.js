@@ -48,9 +48,22 @@ function displayItems(places) {
 displayItems(places)
 
 
-// POPULATE THE DIALOG WITH INFORMATION WHEN IMAGE IS CLICKED
-function showStuff(x) {
-  mytitle.innerHTML = x.name
-  myinfo.innerHTML = `Dedicated ${x.dedicated} by ${x.person} as temple number ${x.number}`
-  mydialog.showModal();
-} // end of function
+
+// visit count
+const visitFeedback = document.querySelector('#last_time');
+let visitTime = localStorage.getItem("firstvisit")
+
+if (visitTime == null) {
+  visitFeedback.textContent = "Welcome! Do you have any questions."
+  localStorage.setItem("firstvisit", Date.now());
+} else {
+    
+    let difference = (Date.now()-visitTime)/86400000 //milis per day
+    
+    if (difference<1) {
+        visitFeedback.innerHTML = `Ohh, you Back soon!`
+    } else {
+        visitFeedback.innerHTML = `You last visited ${Math.floor(difference)} days ago`
+    }
+  
+}
