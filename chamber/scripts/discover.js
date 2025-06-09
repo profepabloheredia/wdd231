@@ -52,7 +52,7 @@ const visitFeedback = document.querySelector('#last_time');
 let visitTime = localStorage.getItem("firstvisit")
 
 if (visitTime == null) {
-  visitFeedback.textContent = "Welcome! Do you have any questions."
+  visitFeedback.textContent = "Welcome! Do you have any questions?"
   localStorage.setItem("firstvisit", Date.now());
 } else {
     
