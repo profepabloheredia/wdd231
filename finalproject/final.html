@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo Heredia">
+    <meta name="description" content="CYBER THREATS PREVENTION final project WDD231 - Pablo A. Heredia">
+    <title>Cyber Threats Prevention - Pablo A. Heredia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalice.css">
+    <link rel="stylesheet" href="../finalproject/styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="../finalproject/favicon-32x32.png">
+    
+    <!-- <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script> -->
+
+    <!-- <meta property="og:title" content="Chamber of commerce">
+    <meta property="og:description"
+        content="This site let you to get soported by peers from a chamber of commerce and exchange information.">
+    <meta property="og:url" content="https://profepabloheredia.github.io/wdd231/chamber/index.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://profepabloheredia.github.io/wdd231/favicon.ico">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apple"> -->
+</head>
+
+<body>
+    <header>
+        <div class="profile" id="profile">
+            <img src="./images/logo.svg" alt="cyber_img" class="cyber_img" loading="lazy">
+            <span>Cyber Threats <br> Prevention </span>
+            <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+
+        <nav id="primary-nav">
+            <a href="../finalproject/final.html">Home</a>
+            <a href="../finalproject/threats.html">Directory</a>
+            <a href="../finalproject/prevention.html">Discover</a>
+            <a href="../finalproject/join.html">Join</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="./images/hero-chamber2.jpg" width="1024" height="350" alt="hero-image" loading="lazy">
+            <button type="button" class="hero-button" onclick="location.href='join.html'"> 👉   Join to Us &raquo;</button>
+        </div>
+        <h1>Home</h1>
+        <div class="home">
+            <section class="info" id="events">
+                <h2> Upcomming Events</h2>
+                <ul>
+                    <li><p> Tomorrow: 👉<b> TEDx - Claire Andersen - The art of Sell.</b></p> </li>
+                    <li><p> Tuesday :👉 <b> Importing taxes due date.</b></p> </li>
+                    <li><p>Saturday 5:00pm :👉  <b> Math Championship for youth.</b></p> </li>
+                </ul>
+                
+                
+            </section>
+            <section class="info" id="weather">
+                <h2>Weather Information</h2>
+                <div class="weather-info">
+                    <figure class="image-caption">
+                        <img src="#" alt="" class="weather_img" id="weather_img">
+                    </figure>
+                    <span id="weather-description"></span>    
+                </div>
+            </section>
+            <section class="info" id="forecast">
+                <h2>Weather Forecast</h2>
+                 <div class="forecast_info">
+                    <span id="weather-forecast"></span>    
+                </div>
+            </section>
+        </div>
+
+
+        
+        <div class="grid" id="spotlights"></div>
+
+    </main>
+
+    <footer>
+        <div class="divFooter">
+            <div id="contact">
+                <p><b>Timbuku Chamber of Commerce</b></p>
+                <p>10 Rue de la Paix.</p>
+                <p>Timbuku, Mali 999</p>
+                <p>info@Timbukuchamber.org</p>
+                <p>(+999)123456</p>
+            </div>
+            <div id="socials">
+                <a href="https://www.youtube.com/user/TimbukuChamberCommerce" target="_blank">
+                    <img src="images/youtube.png" alt="youtube icon" width="64" height="64">
+                </a>
+                <a href="https://x.com/timbucochamber" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon" width="64" height="64">
+                </a>
+                <a href="https://www.linkedin.com/company/Timbuku-chamber-of-commerce/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin icon" width="64" height="64">
+                </a>
+            </div>
+            <div id="info">
+                <p>WDD231 Class Project</p>
+                <p>Pablo Heredia</p>
+                <p><span id="currentyear">####</span> Timbuku Chamber of Commerce</p>
+                <p id="lastModified">##/##/## ##:##:##</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

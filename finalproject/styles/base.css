@@ -1,0 +1,112 @@
+:root {
+    --primary-color: white;
+    /* --secondary-color: rgb(42, 8, 73); */
+    --secondary-color: rgb(56, 37, 73);
+    --tertiary-color: rgb(233, 230, 230);
+    /* --tertiary-color: rgb(204, 202, 202); */
+    --button-background-color:rgb(88, 87, 87);
+    --nav-background-color: rgb(240, 234, 234);
+    --list-completed-color: #ece036;
+    --accent-color: #292c2eea;
+    --accent-color2: #f4f800;
+    --smoke-border-color: rgba(255, 255, 255, 0.849); /* Semi-transparent white for smoke effect */
+    --primary-font: '"Roboto", sans-serif';
+    --secondary-font: '"Monserrat", sans-serif';
+    --tertiary-font: '"Open Sans", sans-serif';
+}
+
+
+/****** common settings *****/
+* {box-sizing: border-box;}
+
+header, main, nav, footer {
+    min-width: 320px;
+    max-width: 1300px;
+    padding: 0;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/********* Common Header part ***************/
+header {
+    background-color: var(--secondary-color);
+    align-items: center;
+}
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: left
+}
+header span {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 2.5em;   
+}
+
+
+.cyber_img{
+    max-width: 100px;
+    height: auto;
+    margin: 2rem;
+    border-radius: 15px;
+    background-color:  var(--smoke-border-color); 
+    box-shadow: 0 0 20px 8px var(--smoke-border-color); /* White glow/smoke effect */   
+}
+
+nav a:hover {border: 2px solid var(--smoke-border-color);}
+
+
+
+
+/**********Hero section *******/
+.hero {
+    position: relative;
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+.hero>img{
+    width: 100%;
+    height:auto;
+    display: block;    
+}
+.hero-button {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom:15%;
+    /* background-color: var(--button-background-color);
+    color: var(--primary-color);
+    border: 1px solid #cb376a;
+    margin-top: 1rem;
+    padding: .7rem;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 200;
+    cursor: pointer;
+    border-radius: 20%; */
+    
+}
+.hero-button:hover {
+    background-color: var(--secondary-color);
+    font-style: italic;
+   
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    
+}
+
+
+
+
+
+
+
