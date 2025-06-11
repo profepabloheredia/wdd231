@@ -225,6 +225,11 @@ footer>div>div>p {
         display: block;
         padding: 0.5rem 0;
     }
+    #primary-nav a:hover {
+        color: var(--primary-color); 
+        background-color: var(--secondary-color);
+        box-shadow: 0 0 5px 2px var(--secondary-color);
+    }
     .list section img {
     display: none; /* smaller viewports only */
     }
