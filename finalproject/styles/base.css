@@ -15,7 +15,6 @@
     --tertiary-font: '"Open Sans", sans-serif';
 }
 
-
 /****** common settings *****/
 * {box-sizing: border-box;}
 
@@ -24,7 +23,7 @@ header, main, nav, footer {
     max-width: 1300px;
     padding: 0;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 /********* Common Header part ***************/
 header {
@@ -60,7 +59,7 @@ nav {
     justify-content: right;
 }
 nav a {
-    padding:0 0 .3rem  0;
+    padding:0 .3rem .3rem  .3rem;
     margin: 6px;
     text-decoration: none;
     font-size: 1.3em;
@@ -71,14 +70,12 @@ nav a {
     color: var(--primary-color);
 
 }
-
 nav a:hover {
     border: 2px solid var(--smoke-border-color);
     color: var(--secondary-color); 
     background-color: var(--smoke-border-color);
     box-shadow: 0 0 5px 2px var(--smoke-border-color);
 } 
-
 /***  Main part ***/
 main {              
     font-family: var(--tertiary-font);
@@ -96,8 +93,6 @@ h1 {
     margin-top: 0%;
 }
 
-
-
 /**********Hero section *******/
 .hero {
     position: relative;
@@ -113,19 +108,22 @@ h1 {
 .hero-button {
     width: auto;
     height: auto;
+    padding: .5rem;
     position: absolute;
-    right: 5%;
-    bottom:15%;
-    background-color: var(--button-background-color);
+    left: 5%;
+    /* right: 25%; */
+    bottom:8%;
+     background-color:transparent;
+    /* background-color: var(--button-background-color); */
     color: var(--primary-color);
-    border: 1px solid #cb376a;
-    margin-top: 1rem;
-    padding: .7rem;
+    border: 1px solid 0;
+    /* margin-top: 1rem; */
+    /* padding: .7rem; */
     font-family: var(--secondary-font);
     font-size: 1.2rem;
     font-weight: 200;
     cursor: pointer;
-    border-radius: 20%; 
+    border-radius: 15%; 
     
 }
 .hero-button:hover {
