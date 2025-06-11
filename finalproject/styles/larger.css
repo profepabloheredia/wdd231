@@ -54,11 +54,8 @@
      
 
 }
-@media (min-width: 1250px) {
+@media (min-width: 1000px) {
 
     /* Discover page */
-     #places {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-       }
+    header span {font-size: 3rem;}
 }

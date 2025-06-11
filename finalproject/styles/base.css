@@ -32,11 +32,11 @@ header {
 }
 /*** profile settings (img span and button) ***/
 #profile {
-    /* display: flex; */
-    display:grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    /* display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
     align-items: center;
-    justify-content: left
+    justify-content: left;
 }
 header span {
     color: var(--primary-color);
@@ -54,6 +54,9 @@ header span {
     background-color:  var(--smoke-border-color); 
     box-shadow: 0 0 20px 8px var(--smoke-border-color); /* White glow/smoke effect */   
 }
+/* #hamburguer-btn{
+    margin-right: 2rem;
+} */
 nav {
     display: flex;
     justify-content: right;
@@ -194,7 +197,7 @@ footer>div>div>p {
     font-size: 2rem;
     font-weight: auto;
     }
-
+    #profile {display: flex; justify-content: space-between;}    
     #hamburger-btn {
         display: block;
         background: none;
