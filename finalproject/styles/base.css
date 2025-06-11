@@ -43,7 +43,8 @@ header span {
     color: var(--primary-color);
     font-family: var(--primary-font);
     font-weight: 500;
-    font-size: 2.5rem;   /*change it to 2.5em in larger*/
+    font-size: 2rem;   /*change it to 2.5em in larger*/
+    /* font-size: 2.5rem;   change it to 2.5em in larger */
 }
 #profile img{
     min-width: 90px;
@@ -189,6 +190,10 @@ footer>div>div>p {
 @media (max-width: 700px) {
     main {
         grid-template-rows: 1fr;
+    }
+    header span { /*check if needed*/
+    font-size: auto;
+    font-weight: auto;
     }
 
     #hamburger-btn {
