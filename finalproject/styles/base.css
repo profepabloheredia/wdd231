@@ -26,14 +26,16 @@ header, main, nav, footer {
     margin: auto;
     border-radius: 8px;
 }
-
 /********* Common Header part ***************/
 header {
     background-color: var(--secondary-color);
     align-items: center;
 }
+/*** profile settings (img span and button) ***/
 #profile {
-    display: flex;
+    /* display: flex; */
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
     justify-content: left
 }
@@ -42,21 +44,57 @@ header span {
     color: var(--primary-color);
     font-family: var(--primary-font);
     font-weight: 500;
-    font-size: 2em;   
+    font-size: 2.5rem;   /*change it to 2.5em in larger*/
 }
-
-
-.cyber_img{
-    max-width: 100px;
+#profile img{
+    min-width: 90px;
+    max-width: 120px;
     height: auto;
     margin: 2rem;
     border-radius: 15px;
     background-color:  var(--smoke-border-color); 
     box-shadow: 0 0 20px 8px var(--smoke-border-color); /* White glow/smoke effect */   
 }
+nav {
+    display: flex;
+    justify-content: right;
+}
+nav a {
+    padding:0 0 .3rem  0;
+    margin: 6px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    transition: 0.1s;
+    border-radius: 7%;
+    color: var(--primary-color);
 
-nav a:hover {border: 2px solid var(--smoke-border-color);}
+}
 
+nav a:hover {
+    border: 2px solid var(--smoke-border-color);
+    color: var(--secondary-color); 
+    background-color: var(--smoke-border-color);
+    box-shadow: 0 0 5px 2px var(--smoke-border-color);
+} 
+
+/***  Main part ***/
+main {              
+    font-family: var(--tertiary-font);
+    display: grid;
+    grid-template-rows: 1fr; /*change it in large viewports*/
+}
+p {
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+h1 {
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-top: 0%;
+}
 
 
 
@@ -103,6 +141,139 @@ nav a:hover {border: 2px solid var(--smoke-border-color);}
    
     
 }
+/***   Footer section    ***/
+#lastModified {
+    color: var(--accent-color2);
+    font-size: 0.8em;
+    font-family: var(--tertiary-font);
+    font-weight: 100;
+}
+footer {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    width: 100%;
+}
+footer>div{
+    justify-content:center;
+}    
+footer>div>div>p {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0%;
+}
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 10px;
+    width: 100%;
+    height: 57px;     
+}
+#socials>a {
+    border: solid;
+    border-color: var(--primary-color);
+    border-width: 3px;
+    border-radius: 15%;
+    background-color: var(--primary-color);      
+} 
+#socials>a>img {
+    width: 50px;
+    height: auto;
+    border: none;
+    margin: 0%;
+    padding: 0%;
+} 
+
+
+/***** small viewports  ****/
+@media (max-width: 700px) {
+    main {
+        grid-template-rows: 1fr;
+    }
+
+    #hamburger-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+    #hamburger:hover {color: var(--accent-color2);}
+    
+    #primary-nav {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--tertiary-color); 
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    #primary-nav.show {max-height: 500px;}
+
+    #primary-nav li {padding: 0.5rem 1rem;}
+
+    #primary-nav a {
+        color: var(--secondary-color);
+        border-color: var(--accent-color);
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .list section img {
+    display: none; /* smaller viewports only */
+    }
+    footer>div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    footer>div>div>p {text-align: center;}
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Discover page */
+    #places div {
+        margin-left: 60px; margin-right: 60px;
+        grid-template-areas: 
+        "name " 
+        "photograph description"
+        "photograph location"
+        "button button"
+      }
+       /* #places div {
+        grid-template-areas: 
+        "name name" 
+        "photograph description"
+        "photograph location"
+        "button button"
+      } */
+      #places div img {
+        width: 350px;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,64 @@
+@media (min-width: 700px) {
+
+    
+    #hamburger-btn {
+        display: none;
+        cursor: pointer;
+        list-style: none;
+        padding: 0;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+ 
+   footer>div {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        
+    }
+
+    footer>div>div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+        
+    }
+    footer>div>div>p {text-align: left;}
+
+    #contact, #info {
+        gap: 4px;
+        margin-top: 10px;
+        padding-left: 2rem;
+    }
+
+    #socials {margin: 1rem;
+    }
+
+    .formContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+     #levelDialog {width: 700px;}
+   
+
+     
+
+}
+@media (min-width: 1250px) {
+
+    /* Discover page */
+     #places {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+}
