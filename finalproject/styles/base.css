@@ -116,7 +116,7 @@ h1 {
     position: absolute;
     right: 5%;
     bottom:15%;
-    /* background-color: var(--button-background-color);
+    background-color: var(--button-background-color);
     color: var(--primary-color);
     border: 1px solid #cb376a;
     margin-top: 1rem;
@@ -125,7 +125,7 @@ h1 {
     font-size: 1.2rem;
     font-weight: 200;
     cursor: pointer;
-    border-radius: 20%; */
+    border-radius: 20%; 
     
 }
 .hero-button:hover {
@@ -230,38 +230,13 @@ footer>div>div>p {
         background-color: var(--secondary-color);
         box-shadow: 0 0 5px 2px var(--secondary-color);
     }
-    .list section img {
-    display: none; /* smaller viewports only */
-    }
+    
     footer>div {
         display: flex;
         flex-direction: column;
         gap: 8px;
     }
     footer>div>div>p {text-align: center;}
-    .grid {
-        display: flex;
-        flex-direction: column;
-    }
-    /* Discover page */
-    #places div {
-        margin-left: 60px; margin-right: 60px;
-        grid-template-areas: 
-        "name " 
-        "photograph description"
-        "photograph location"
-        "button button"
-      }
-       /* #places div {
-        grid-template-areas: 
-        "name name" 
-        "photograph description"
-        "photograph location"
-        "button button"
-      } */
-      #places div img {
-        width: 350px;
-    }
    
 }
 
