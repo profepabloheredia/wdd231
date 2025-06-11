@@ -2,6 +2,7 @@ window.onload = function() {
             const modalOverlay = document.getElementById('welcomeModalOverlay');
             const closeModalButton = document.getElementById('closeModalButton');
             const signInButton = document.getElementById('signInButton');
+            const joinButton = document.getElementById('joinButton');
 
             // Check if the site has been visited before
             const hasVisited = localStorage.getItem('visitedCyberThreatsPrevention');
@@ -10,8 +11,9 @@ window.onload = function() {
                 // If it's the first visit, show the modal
                 modalOverlay.classList.add('visible');
                 // Set the flag in localStorage
-                localStorage.setItem('visitedCyberThreatsPrevention', 'false');
+                localStorage.setItem('visitedCyberThreatsPrevention', 'true');
                 // localStorage.setItem('visitedCyberThreatsPrevention', 'true');//Change to this after testing process
+                joinButton.className='hide-button';
             }
 
             // Function to close the modal

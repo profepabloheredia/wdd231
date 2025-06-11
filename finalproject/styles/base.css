@@ -44,10 +44,10 @@ header span {
    
 }
 header img{
-    min-width: 75px;
+    min-width: 80px;
     max-width: 90px;
     height: auto;
-    margin: 1rem 1rem 0.6rem 1rem;
+    margin: 1rem;
     border-radius: 25px;
     background-color:  var(--smoke-border-color); 
     box-shadow: 0 0 10px 5px var(--smoke-border-color); /* White glow/smoke effect */   
@@ -137,6 +137,9 @@ h1 {
     left: 0;
    
     
+}
+.hide-button{
+    display: none;
 }
 
 /***   welcome section**** Welcome Modal Styles */
