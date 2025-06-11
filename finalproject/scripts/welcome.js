@@ -10,7 +10,7 @@ window.onload = function() {
                 // If it's the first visit, show the modal
                 modalOverlay.classList.add('visible');
                 // Set the flag in localStorage
-                localStorage.setItem('visitedCyberThreatsPrevention', 'true');
+                localStorage.setItem('visitedCyberThreatsPrevention', 'false');
             }
 
             // Function to close the modal
