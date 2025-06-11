@@ -21,8 +21,8 @@
     
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <!--<script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script> -->
+    <script src="scripts/welcome.js" defer></script>
+    <!-- <script src="scripts/spotlights.js" defer></script> -->
 
     <!-- <meta property="og:title" content="Chamber of commerce">
     <meta property="og:description"
@@ -92,6 +92,16 @@
 
     </main>
 
+    <!-- Welcome Modal Structure -->
+    <div id="welcomeModalOverlay" class="modal-overlay">
+        <div id="welcomeModal" class="welcome-modal">
+            <button class="modal-close-button" id="closeModalButton">&times;</button>
+            <h2>Welcome to CyberSafeguard!</h2>
+            <p>Your guide to understanding and preventing cyber threats. Sign in to personalize your experience and access exclusive content.</p>
+            <button class="modal-button" id="signInButton">Sign In</button>
+        </div>
+    </div>
+   
     <footer>
         <div class="divFooter">
             <div id="contact">

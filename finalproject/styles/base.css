@@ -43,7 +43,7 @@ header span {
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 2.5rem;   /*change it to 2.5em in larger*/
-    /* font-size: 2.5rem;   change it to 2.5em in larger */
+   
 }
 #profile img{
     min-width: 90px;
@@ -54,9 +54,7 @@ header span {
     background-color:  var(--smoke-border-color); 
     box-shadow: 0 0 20px 8px var(--smoke-border-color); /* White glow/smoke effect */   
 }
-/* #hamburguer-btn{
-    margin-right: 2rem;
-} */
+
 nav {
     display: flex;
     justify-content: right;
@@ -142,6 +140,97 @@ h1 {
    
     
 }
+
+/***   welcome section    ***/
+  /* Welcome Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Ensure it's on top */
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+
+        .modal-overlay.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .welcome-modal {
+            background-color: var(--container-dark); /* Match container dark background */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            max-width: 450px;
+            width: 90%; /* Responsive width */
+            color: var(--light-text-color);
+            text-align: center;
+            position: relative;
+            transform: translateY(-20px); /* Initial subtle slide up animation */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .modal-overlay.visible .welcome-modal {
+            transform: translateY(0);
+        }
+
+        .welcome-modal h2 {
+            color: var(--accent-color); /* Amber for modal heading */
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .welcome-modal p {
+            color: var(--text-subtle); /* Lighter text for modal body */
+            margin-bottom: 25px;
+            font-size: 1.05em;
+        }
+
+        .modal-button {
+            background-color: var(--primary-color); /* Dark blue button */
+            color: var(--light-text-color);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+        }
+
+        .modal-button:hover {
+            background-color: #004488; /* Slightly lighter on hover */
+            transform: translateY(-2px);
+        }
+
+        .modal-close-button {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.8em;
+            color: var(--text-subtle);
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .modal-close-button:hover {
+            color: var(--light-text-color);
+        }
+
+
+
+
 /***   Footer section    ***/
 #lastModified {
     color: var(--accent-color2);
