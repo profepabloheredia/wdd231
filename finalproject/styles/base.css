@@ -33,8 +33,6 @@ header {
 /*** profile settings (img span and button) ***/
 #profile {
     display: flex;
-    /* display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
     align-items: center;
     justify-content: left;
 }
@@ -45,14 +43,14 @@ header span {
     font-size: 2.5rem;   /*change it to 2.5em in larger*/
    
 }
-#profile img{
-    min-width: 90px;
-    max-width: 120px;
+header img{
+    min-width: 75px;
+    max-width: 90px;
     height: auto;
-    margin: 2rem;
-    border-radius: 15px;
+    margin: 1rem 1rem 0.6rem 1rem;
+    border-radius: 25px;
     background-color:  var(--smoke-border-color); 
-    box-shadow: 0 0 20px 8px var(--smoke-border-color); /* White glow/smoke effect */   
+    box-shadow: 0 0 10px 5px var(--smoke-border-color); /* White glow/smoke effect */   
 }
 
 nav {
