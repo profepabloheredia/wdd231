@@ -243,7 +243,7 @@ footer>div>div>p {
     justify-content:center;
     gap: 10px;
     width: 100%;
-    height: 57px;     
+    height: 46px;     
 }
 #socials>a {
     border: solid;
@@ -253,7 +253,7 @@ footer>div>div>p {
     background-color: var(--primary-color);      
 } 
 #socials>a>img {
-    width: 50px;
+    width: 40px;
     height: auto;
     border: none;
     margin: 0%;
@@ -268,7 +268,7 @@ footer>div>div>p {
     }
     header span { /*check if needed*/
     font-size: 2rem;
-    font-weight: auto;
+    
     }
     #profile {display: flex; justify-content: space-between;}    
     #hamburger-btn {
