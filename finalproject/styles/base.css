@@ -141,8 +141,8 @@ h1 {
     
 }
 
-/***   welcome section    ***/
-  /* Welcome Modal Styles */
+/***   welcome section    **** Welcome Modal Styles */
+ 
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -165,13 +165,13 @@ h1 {
         }
 
         .welcome-modal {
-            background-color: var(--container-dark); /* Match container dark background */
+            background-color:var(--secondary-color);
             padding: 30px;
             border-radius: 12px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
             max-width: 450px;
             width: 90%; /* Responsive width */
-            color: var(--light-text-color);
+            color: var(--smoke-border-color);
             text-align: center;
             position: relative;
             transform: translateY(-20px); /* Initial subtle slide up animation */
@@ -183,20 +183,20 @@ h1 {
         }
 
         .welcome-modal h2 {
-            color: var(--accent-color); /* Amber for modal heading */
+            color: var(--primary-color);
             margin-bottom: 15px;
             font-size: 1.8em;
         }
 
         .welcome-modal p {
-            color: var(--text-subtle); /* Lighter text for modal body */
+            color: aquamarine; /* Lighter text for modal body */
             margin-bottom: 25px;
             font-size: 1.05em;
         }
 
         .modal-button {
             background-color: var(--primary-color); /* Dark blue button */
-            color: var(--light-text-color);
+            color: aquamarine;
             border: none;
             padding: 12px 25px;
             border-radius: 8px;

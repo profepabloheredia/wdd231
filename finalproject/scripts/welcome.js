@@ -11,6 +11,7 @@ window.onload = function() {
                 modalOverlay.classList.add('visible');
                 // Set the flag in localStorage
                 localStorage.setItem('visitedCyberThreatsPrevention', 'false');
+                // localStorage.setItem('visitedCyberThreatsPrevention', 'true');//Change to this after testing process
             }
 
             // Function to close the modal
