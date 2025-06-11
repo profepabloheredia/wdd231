@@ -114,7 +114,7 @@ h1 {
     left: 5%;
     /* right: 25%; */
     bottom:8%;
-     background-color:transparent;
+    background-color:transparent;
     /* background-color: var(--button-background-color); */
     color: var(--primary-color);
     border: 1px solid 0;
@@ -165,10 +165,10 @@ h1 {
         }
 
         .welcome-modal {
-            background-color:var(--secondary-color);
+            background-color:rgb(56, 37, 73, .8);
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 5px 20px rgba(149, 210, 238, 0.5);
             max-width: 450px;
             width: 90%; /* Responsive width */
             color: var(--smoke-border-color);
@@ -196,7 +196,7 @@ h1 {
 
         .modal-button {
             background-color: var(--primary-color); /* Dark blue button */
-            color: aquamarine;
+            color:var(--secondary-color);
             border: none;
             padding: 12px 25px;
             border-radius: 8px;
@@ -207,7 +207,7 @@ h1 {
         }
 
         .modal-button:hover {
-            background-color: #004488; /* Slightly lighter on hover */
+            background-color: #6996c4; /* Slightly lighter on hover */
             transform: translateY(-2px);
         }
 
