@@ -19,8 +19,7 @@ window.onload = function() {
             // Function to close the modal
             function closeModal() {
                 modalOverlay.classList.remove('visible');
-                // Optional: You could also set a different flag here if you want
-                // the modal to reappear on refresh until the user signs in.
+              
             }
 
             // Event listener for the close button

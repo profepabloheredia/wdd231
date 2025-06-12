@@ -6,7 +6,7 @@
             "email":"info@virustotal.com",
             "type": "Virus Analizer",
             "url": "https://www.virustotal.com/",
-            "image": "logo1.webp",
+            "image": "logo1.png",
             "level": 1
         },
         {
@@ -15,8 +15,35 @@
             "email":"info@urlabuse.com",
             "type": "URL Analizer",
             "url": "https://urlabuse.com/",
-            "image": "logo2.webp",
-            "level": 1
+            "image": "logo2.png",
+            "level": 2
+        },
+        {
+            "name": "MITRE ATT&CK",
+            "description": "MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.",
+            "email":"info@mitre.org",
+            "type": "Attack information",
+            "url": "https://attack.mitre.org/",
+            "image": "logo3.png",
+            "level": 3
+        },
+        {
+            "name": "Url Abuse",
+            "description": "Analyse suspicious domains, IPs and URLs to detect malware and other breaches.",
+            "email":"info@urlabuse.com",
+            "type": "URL Analizer",
+            "url": "https://urlabuse.com/",
+            "image": "logo2.png",
+            "level": 2
+        },
+        {
+            "name": "Url Abuse",
+            "description": "Analyse suspicious domains, IPs and URLs to detect malware and other breaches.",
+            "email":"info@urlabuse.com",
+            "type": "URL Analizer",
+            "url": "https://urlabuse.com/",
+            "image": "logo2.png",
+            "level": 2
         }
       
     ]
