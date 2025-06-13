@@ -9,7 +9,7 @@ const upcomingEvents = events
     .filter(event => new Date(event.date) >= today)
     .sort((a, b) => new Date(a.date) - new Date(b.date))
 // Display a maximum of 5 upcoming events or all if less than 5
-const eventsToDisplay = upcomingEvents.slice(0, 5); // Display top 5 closest event
+const eventsToDisplay = upcomingEvents.slice(0, 3); // Display top 5 closest event
 if (eventsToDisplay.length > 0) {
     eventsToDisplay.forEach(event => {
         const eventCard = document.createElement('div');
@@ -20,8 +20,9 @@ if (eventsToDisplay.length > 0) {
         eventCard.innerHTML = `<ul>
             <li><h3>${event.name}</h3>
             <p class="event-date">Date: ${formattedDate}</p>
-            <p>${event.description}</p><a href:"https://calendar.google.com/calendar"> Schedule Up</a></li>
-        </li>`;
+            <p>${event.description}</p>
+            <a href="https://calendar.google.com/calendar"> <i>Schedule Up</i></a></li>
+        </ul>`;
         eventsListContainer.appendChild(eventCard);
     });
 } else {

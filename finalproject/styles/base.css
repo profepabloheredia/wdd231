@@ -142,6 +142,40 @@ h1 {
     display: none;
 }
 
+/******** home section  *******/
+
+.info {
+    padding: 0;
+    margin: 5px;
+    border: 1px solid var(--tertiary-color); 
+    box-shadow: 0 0 10px #aaa;   
+}
+.info h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    margin: 0;
+    padding: 10px 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 1.3em;
+}
+.event-list{
+    display: flex;
+}
+.event-card{
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 0%;
+    background-color: var(--tertiary-color);
+}
+
+
+
+
+
+
 /***   welcome section**** Welcome Modal Styles */
 .modal-overlay {
     position: fixed;
@@ -333,9 +367,9 @@ footer>div>div>p {
 
 
 
-section h3, section h2 {
+/* section h3, section h2 {
 	font-size: 1.5rem;
-}
+} */
 
 /***** small viewports  ****/
 @media (max-width: 700px) {
