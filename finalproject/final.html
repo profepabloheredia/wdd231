@@ -23,6 +23,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/welcome.js" defer></script>
     <script src="scripts/partners.js" defer></script>
+    <script type="module" src="scripts/events.js" ></script>
 
     <!-- <meta property="og:title" content="Chamber of commerce">
     <meta property="og:description"
@@ -60,12 +61,10 @@
         <h1>Home</h1>
         <div class="home">
             <section class="info" id="events">
-                <h2> Upcomming Events</h2>
-                <ul>
-                    <li><p> Tomorrow: 👉<b> TEDx - Claire Andersen - The art of Sell.</b></p> </li>
-                    <li><p> Tuesday :👉 <b> Importing taxes due date.</b></p> </li>
-                    <li><p>Saturday 5:00pm :👉  <b> Math Championship for youth.</b></p> </li>
-                </ul>
+                <h2>Upcoming Cybersecurity Events</h2>
+                <div id="eventsList" class="events-list">
+                <!-- Events will be dynamically loaded here -->
+                </div>
                 
                 
             </section>

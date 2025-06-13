@@ -6,8 +6,8 @@ const path = './data/partners.json';
 async function getMembers() {
     const response = await fetch(path);
     const data = await response.json();
-    const bestMembers = data.partners.filter(member => member.level > 1);
-    displayMembers(bestMembers)
+    // const bestMembers = data.partners.filter(member => member.level > 1);
+    displayMembers(data.partners)
 }
 
 
@@ -15,7 +15,7 @@ function levelToClass(level) {
     if (level === 2) {
       return "Medium";
     } else if (level === 3) {
-      return "Advanced";
+      return "High";
     } else {
         return "Low";
     }
@@ -50,10 +50,11 @@ function showData(member) {
     
     block.appendChild(name)
     const description = document.createElement('p')
+    description.className="cardDescription"
     description.innerHTML = member.description
     block.appendChild(description)
 
-    const type = document.createElement('p')
+    const type = document.createElement('h5')
     type.innerHTML = member.type
     block.appendChild(type)
 
@@ -64,6 +65,7 @@ function showData(member) {
     block.appendChild(link)
 
     const level = document.createElement('p')
+    level.className="cardLevel"
     level.innerHTML = `Site Complexity: <b>"${levelToClass(member.level)}</b>"`
     block.appendChild(level)
     
