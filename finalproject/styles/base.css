@@ -114,12 +114,8 @@ h1 {
     left: 5%;
     /* right: 25%; */
     bottom:8%;
-    background-color:transparent;
-    /* background-color: var(--button-background-color); */
     color:black;
     border: 1px solid 0;
-    /* margin-top: 1rem; */
-    /* padding: .7rem; */
     font-family: var(--secondary-font);
     font-size: 1.2rem;
     font-weight: bold;
