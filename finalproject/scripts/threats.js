@@ -31,14 +31,12 @@ function showThreat(threat) {
     const btn= document.createElement('button')
     btn.innerHTML = "Learn More"
     btn.onclick = `learnMore("${threat.description}")`
-    btn.setAttribute('onClick', `learnMore("${threat.description}")`);
+    btn.setAttribute('onClick', `learnMore("${threat.name}: ${threat.description}")`);
     threatBlock.appendChild(btn)
     
     threatsList.appendChild(threatBlock)
 }
 
-
-function learnMore(text) {
-    alert(text);}
+function learnMore(text) {alert(text);}
 
 getThreats();
