@@ -24,6 +24,9 @@
     <script src="scripts/welcome.js" defer></script>
     <script src="scripts/partners.js" defer></script>
     <script type="module" src="scripts/events.js" ></script>
+    <script src="scripts/threats.js" defer></script>
+    <!-- <script src="scripts/nistApi.js" defer></script> -->
+    
 
 </head>
 
@@ -49,6 +52,7 @@
             <button type="button" id="joinButton" class="hero-button" onclick="location.href='join.html'">   Join &raquo;</button>
         </div>
         <h1>Home</h1>
+        <h2></h2>
         <div class="home">
             <section class="info" id="events">
                 <h2>Upcoming Cybersecurity Events</h2>
@@ -59,26 +63,24 @@
                
                 
             </section>
-            <section class="info" id="weather">
-                <h2>Weather Information</h2>
-                <div class="weather-info">
-                    <figure class="image-caption">
-                        <img src="#" alt="" class="weather_img" id="weather_img">
-                    </figure>
-                    <span id="weather-description"></span>    
+            <section class="info" id="threats">
+                <h2>Recognizing main Threats</h2>
+                <div id="threats-list">
+                    <!-- <h3 id="score"></h3>
+                    <p id="description"></p>
+                    <p id="cveID"></p> -->
                 </div>
+                <h5>Source: <i> "Cyber Threats Prevention"</i></h5>
             </section>
-            <section class="info" id="forecast">
-                <h2>Weather Forecast</h2>
-                 <div class="forecast_info">
-                    <span id="weather-forecast"></span>    
+            <section class="info" id="prevention">
+                <h2>Top Preventive Actions</h2>
+                 <div class="prevent-actions">
+                    
                 </div>
             </section>
         </div>
-
-
-        
-        <div class="grid" id="spotlights"></div>
+       
+        <div class="grid" id="partners"></div>
 
     </main>
 
@@ -96,7 +98,7 @@
         <div class="divFooter">
             <div id="contact">
                 <p><b>Cyber Threats Prevention</b></p>
-                <p>www.ciberthreatsprevention.org</p>
+                <!-- <p>www.ciberthreatsprevention.org</p> -->
                 
                 <p>(+999)123456</p>
                 <p>info@ciberthreatsprevention.org</p>

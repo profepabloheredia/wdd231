@@ -1,0 +1,56 @@
+{
+    "threats": [
+        {
+            "index": 1,
+            "name": "Phishing",
+            "description": "Phishing attacks use social engineering to trick users into obtaining sensitive information such as passwords, bank details or personal information." 
+        },
+        {
+            "index": 2,
+            "name": "Ransomware",
+            "description": "This type of malware encrypts a user's data and demands a ransom in exchange for the decryption key." 
+        },
+         {
+            "index": 3,
+            "name": "Denial of Service (DoS)/DDoS ",
+            "description": "They consist of overloading a system or network with malicious traffic, preventing legitimate users from accessing services." 
+        },
+         {
+            "index": 4,
+            "name": "Injection attacks",
+            "description": "Attackers insert malicious code into an application to manipulate the database, execute unauthorized code or cause outages." 
+        },
+         {
+            "index": 5,
+            "name": "Man-in-the-middle (MITM)",
+            "description": "An attacker intercepts communication between two systems and can read, modify or steal transmitted data." 
+        },
+         {
+            "index": 6,
+            "name": "Malware",
+            "description": "Malicious software designed to damage, disrupt or access computer systems without the user's knowledge." 
+        },
+        {
+            "index": 7,
+            "name": "Insider threats",
+            "description": "Arise from employees or contractors with access to systems and data who abuse this access intentionally or unintentionally."
+        },
+        {
+            "index": 8,
+            "name": "Supply chain",
+            "description": "Attack suppliers or partners to compromise the security of a target organization through their business relationships."
+        },
+        {
+            "index": 9,
+            "name": "Server-side request forgery (SSRF)",
+            "description": "An attacker exploits a vulnerability in a web application or API to make unauthorized requests from the server to other systems."
+        },
+        {
+            "index":10,
+            "name": "Insecure API consumption",
+            "description": "APIs can be vulnerable if security measures are not properly implemented, which can lead to data exposure or manipulation by attackers"
+        }
+    ]
+}
+
+

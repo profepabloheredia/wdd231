@@ -1,11 +1,13 @@
-import event from '../data/events.mjs';
-const events=event.cybersecurityEvents;
+import events from '../data/events.mjs';
+
+const event=events.cybersecurityEvents;
+
 
 const eventsListContainer = document.getElementById('eventsList');
 const today = new Date();
 today.setHours(0, 0, 0, 0); // Normalize today's date to midnight for compariso
 // Filter out past events and sort upcoming events
-const upcomingEvents = events
+const upcomingEvents = event
     .filter(event => new Date(event.date) >= today)
     .sort((a, b) => new Date(a.date) - new Date(b.date))
 // Display a maximum of 5 upcoming events or all if less than 5

@@ -19,7 +19,7 @@
             "level": 2
         },
         {
-            "name": "MITRE ATT&CK",
+            "name": "Mitre Att&ck",
             "description": "MITRE ATT&CK® is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations.",
             "email":"info@mitre.org",
             "type": "Attack information",
@@ -28,21 +28,21 @@
             "level": 3
         },
         {
-            "name": "Url Abuse",
-            "description": "Analyse suspicious domains, IPs and URLs to detect malware and other breaches.",
-            "email":"info@urlabuse.com",
-            "type": "URL Analizer",
-            "url": "https://urlabuse.com/",
-            "image": "logo2.png",
-            "level": 2
+            "name": "OWASP",
+            "description": "The OWASP mission is to improve software security through Open Source initiatives and community education",
+            "email":"info@owasp.org",
+            "type": "Comunity",
+            "url": "https://owasp.org/",
+            "image": "logo4.png",
+            "level": 3
         },
         {
-            "name": "Url Abuse",
-            "description": "Analyse suspicious domains, IPs and URLs to detect malware and other breaches.",
-            "email":"info@urlabuse.com",
-            "type": "URL Analizer",
-            "url": "https://urlabuse.com/",
-            "image": "logo2.png",
+            "name": "National Vulnerability Database",
+            "description": "The NVD is the U.S. government repository of standards based vulnerability management data represented using the Security Content Automation Protocol (SCAP).",
+            "email":"info@nvd.nist.gov",
+            "type": "Database",
+            "url": "https://nvd.nist.gov/",
+            "image": "logo5.png",
             "level": 2
         }
       

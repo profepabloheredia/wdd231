@@ -121,8 +121,11 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     border-radius: 25%; 
-    animation: slidein 1s infinite alternate linear;
-    
+    animation: colorChange 1s infinite alternate linear;
+}
+@keyframes colorChange {
+    0% {background-color: #aebb1a;    }
+    100% {background-color: var(--accent-color2);}
 }
 .hero-button:hover {
     font-style: italic;
@@ -191,18 +194,15 @@ h1 {
     font-style: italic;
 }
 @keyframes slidein {
-    0% {
-       
+    0% {       
       /* opacity: 60%; */
       margin-top: 30px; 
       background-color: #aebb1a;
     }
-    100% {
-      /* opacity: 100%; */
-      margin-top: 0px;
-      background-color: var(--accent-color2);
+    100% {   
     }
   }
+  
 
 
 /***   welcome section**** Welcome Modal Styles */
@@ -279,6 +279,62 @@ h1 {
     color: white;
 }
 
+
+
+/********   spotlights part cards *******/
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	
+}
+.card {
+    padding: 0;
+    margin: 5px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    max-height: 250px; 
+    display: grid;
+    /* grid-template-rows: 47px 31px 85px  25px 25px 25px; */
+    grid-template-areas: 
+        "image"  
+        "name"
+        /* "description"
+        "type"  */
+        "wPage" 
+        "level";
+}
+.card>h2 {
+    grid-area:name;
+    margin: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: black;
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+.card img {
+    grid-area:image;
+    height: 45px;
+    width: auto;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+}
+/* .cardDescription{ grid-area: description;} */
+/* .card h5 {grid-area: type;} */
+.card a {grid-area: wPage;}
+.card a:hover{font-size: larger;font-style: italic;}
+.cardLevel{grid-area: level;}
+.card p {padding: 5px; overflow:hidden; margin: 0.5%;}
+
+
+
 /***   Footer section    ***/
 #lastModified {
     color: var(--accent-color2);
@@ -325,57 +381,6 @@ footer>div>div>p {
 } 
 
 
-
-/********   spotlights part cards *******/
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	
-}
-.card {
-    padding: 0;
-    margin: 5px;
-    border: 1px solid var(--tertiary-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #aaa;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    max-height: 250px; 
-    display: grid;
-    grid-template-rows: 47px 31px 85px  25px 25px 25px;
-    grid-template-areas: 
-        "image"  
-        "name"
-        "description"
-        "type" 
-        "wPage" 
-        "level";
-}
-.card>h2 {
-    grid-area:name;
-    margin: 0;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: black;
-    padding: 5px 0;
-    font-size: 1.1em;
-}
-.card img {
-    grid-area:image;
-    height: 45px;
-    width: auto;
-    padding: 5px;
-    margin: 0;
-    border-radius: 10px;
-}
-.cardDescription{ grid-area: description;}
-.card h5 {grid-area: type;}
-.card a {grid-area: wPage;}
-.cardLevel{grid-area: level;}
-.card p {padding: 5px; overflow:hidden; margin: 0.5%;}
 
 
 

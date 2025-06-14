@@ -1,5 +1,5 @@
 
-const partners = document.querySelector('#spotlights');
+const partners = document.querySelector('#partners');
 
 const path = './data/partners.json';
 
@@ -24,7 +24,7 @@ function levelToClass(level) {
 getMembers();
 
 const displayMembers = (myArray) => {
-    for (let step = 0; step < 3; step++) {
+    for (let step = 0; step < 4; step++) {
     const random = Math.floor(Math.random() * myArray.length);
 
     let picked = myArray[random];
@@ -47,16 +47,18 @@ function showData(member) {
 
     const name= document.createElement('h2')
     name.innerHTML = member.name
-    
     block.appendChild(name)
-    const description = document.createElement('p')
-    description.className="cardDescription"
-    description.innerHTML = member.description
-    block.appendChild(description)
+    
+    //***** Do not show following - too long card */
 
-    const type = document.createElement('h5')
-    type.innerHTML = member.type
-    block.appendChild(type)
+    // const description = document.createElement('p')
+    // description.className="cardDescription"
+    // description.innerHTML = member.description
+    // block.appendChild(description)
+
+    // const type = document.createElement('h5')
+    // type.innerHTML = member.type
+    // block.appendChild(type)
 
     const link = document.createElement('a')
     link.href = member.url
