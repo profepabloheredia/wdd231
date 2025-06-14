@@ -84,6 +84,8 @@ main {
 p {
     font-family: var(--primary-font);
     font-weight: 400;
+    font-size:14px ;
+    /* padding: .5rem; */
 }
 h1 {
     font-family: var(--primary-font);
@@ -136,19 +138,25 @@ h1 {
     top: 0;
     left: 0;
    
-    
 }
 .hide-button{
     display: none;
 }
 
-/******** home section  *******/
 
+
+
+/************* HOME SECTION  ************/
+
+/*** EVENTS section ***/
 .info {
     padding: 0;
     margin: 5px;
-    border: 1px solid var(--tertiary-color); 
-    box-shadow: 0 0 10px #aaa;   
+    /* border: 1px solid var(--tertiary-color);  */
+    /* box-shadow: 0 0 10px #aaa; */
+     border: solid;
+    border-width: 1px;
+    border-radius:0 0 10px 10px;
 }
 .info h2 {
     background-color: var(--secondary-color);
@@ -163,17 +171,42 @@ h1 {
     display: flex;
 }
 .event-card{
+    display:grid;
+    grid-template-columns: 2fr 1.5fr;
     border: solid;
     border-width: 1px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 7px;
     padding: 0%;
+    box-shadow: 0 0 10px #000; 
     background-color: var(--tertiary-color);
+    text-align: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: slidein;
+    /* animation: slidein 1s infinite alternate linear; */
+    
 }
-
-
-
-
+.event-card:hover{background-color: var(--accent-color2);margin: .5%;}
+.card-info{margin: 0; padding: 5px;}
+#schedule-up:hover{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
+@keyframes slidein {
+    0% {
+       
+      opacity: 60%;
+      margin-top: 30px; 
+      background-color: #aebb1a;
+    }
+    100% {
+      opacity: 100%;
+      margin-top: 0px;
+      background-color: var(--tertiary-color);
+    }
+  }
 
 
 /***   welcome section**** Welcome Modal Styles */
@@ -296,6 +329,7 @@ footer>div>div>p {
 } 
 
 
+
 /********   spotlights part cards *******/
 .grid {
 	display: grid;
@@ -324,7 +358,7 @@ footer>div>div>p {
         "wPage" 
         "level";
 }
-.card h2 {
+.card>h2 {
     grid-area:name;
     margin: 0;
     width: 100%;
@@ -341,35 +375,13 @@ footer>div>div>p {
     margin: 0;
     border-radius: 10px;
 }
-.cardDescription{
-    grid-area: description;
-}
+.cardDescription{ grid-area: description;}
 .card h5 {grid-area: type;}
 .card a {grid-area: wPage;}
 .cardLevel{grid-area: level;}
-.card p {
-    padding: 5px;
-    overflow:hidden;
-    font-size: auto;
-    margin: 0.5%;
-    
-
-}
-
-/* .card h5{
-    border-bottom: solid;
-    border-bottom-width: 1px;
-    border-bottom-style: dotted;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    grid-area:level;
-} */
+.card p {padding: 5px; overflow:hidden; margin: 0.5%;}
 
 
-
-/* section h3, section h2 {
-	font-size: 1.5rem;
-} */
 
 /***** small viewports  ****/
 @media (max-width: 700px) {

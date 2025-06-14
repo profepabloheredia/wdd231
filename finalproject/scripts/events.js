@@ -17,16 +17,14 @@ if (eventsToDisplay.length > 0) {
         const eventDate = new Date(event.date);
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const formattedDate = eventDate.toLocaleDateString('en-US', options); // Format date for displa
-        eventCard.innerHTML = `<ul>
-            <li><h3>${event.name}</h3>
-            <p class="event-date">Date: ${formattedDate}</p>
-            <p>${event.description}</p>
-            <a href="https://calendar.google.com/calendar"> <i>Schedule Up</i></a></li>
-        </ul>`;
+        eventCard.innerHTML = `
+            <h3 class="card-info">${event.name}</h3>
+            <p id="card-date" class="card-info">Date:<b> ${formattedDate}</b></p>
+            <p class="card-info">${event.description}</p>
+            <a id="schedule-up" class="card-info" href="${event.link}"> Schedule Up</a>
+        `;
         eventsListContainer.appendChild(eventCard);
     });
 } else {
         eventsListContainer.innerHTML = '<p>No upcoming cybersecurity events at the moment. Check back soon!</p>';
         }
-            
-            
