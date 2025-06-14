@@ -69,7 +69,7 @@ nav a {
     color: var(--primary-color);
 
 }
-nav a:hover {
+nav a:hover, .hero-button:hover{
     border: 2px solid var(--smoke-border-color);
     color: var(--secondary-color); 
     background-color: var(--smoke-border-color);
@@ -122,18 +122,15 @@ h1 {
     /* padding: .7rem; */
     font-family: var(--secondary-font);
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 25%; 
     animation: slidein 1s infinite alternate linear;
     
 }
 .hero-button:hover {
-    background-color: var(--smoke-border-color);
     font-style: italic;
-    font-weight: bolder;
     animation:none;
-   
 }
 .hero::before {
     content: "";
@@ -200,12 +197,12 @@ h1 {
 @keyframes slidein {
     0% {
        
-      opacity: 60%;
+      /* opacity: 60%; */
       margin-top: 30px; 
       background-color: #aebb1a;
     }
     100% {
-      opacity: 100%;
+      /* opacity: 100%; */
       margin-top: 0px;
       background-color: var(--accent-color2);
     }
