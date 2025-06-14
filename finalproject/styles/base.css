@@ -116,7 +116,7 @@ h1 {
     bottom:8%;
     background-color:transparent;
     /* background-color: var(--button-background-color); */
-    color: var(--primary-color);
+    color:black;
     border: 1px solid 0;
     /* margin-top: 1rem; */
     /* padding: .7rem; */
@@ -124,12 +124,15 @@ h1 {
     font-size: 1.2rem;
     font-weight: 200;
     cursor: pointer;
-    border-radius: 15%; 
+    border-radius: 25%; 
+    animation: slidein 1s infinite alternate linear;
     
 }
 .hero-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--smoke-border-color);
     font-style: italic;
+    font-weight: bolder;
+    animation:none;
    
 }
 .hero::before {
@@ -204,7 +207,7 @@ h1 {
     100% {
       opacity: 100%;
       margin-top: 0px;
-      background-color: var(--tertiary-color);
+      background-color: var(--accent-color2);
     }
   }
 
