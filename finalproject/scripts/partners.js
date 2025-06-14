@@ -73,3 +73,4 @@ function showData(member) {
     
     partners.appendChild(block)
 }
+

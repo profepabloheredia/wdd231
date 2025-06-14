@@ -30,3 +30,5 @@ if (eventsToDisplay.length > 0) {
 } else {
         eventsListContainer.innerHTML = '<p>No upcoming cybersecurity events at the moment. Check back soon!</p>';
         }
+
+        
