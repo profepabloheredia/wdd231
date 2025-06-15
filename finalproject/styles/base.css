@@ -207,7 +207,7 @@ main a:hover{
     100% {   
     }
 }
-/*** threats section ***/
+/*** HOME threats section ***/
 #threats-list>section {
     display:grid;
     grid-template-columns: 3fr 1fr;
@@ -241,7 +241,7 @@ main a:hover{
     margin: .5%;
 }
 
-/***   welcome section**** Welcome Modal Styles */
+/***  welcome section**** Welcome Modal Styles */
 .modal-overlay {
     position: fixed;
     top: 0;

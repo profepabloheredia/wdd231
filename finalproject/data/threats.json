@@ -3,52 +3,72 @@
         {
             "index": 1,
             "name": "Phishing",
-            "description": "Phishing attacks use social engineering to trick users into obtaining sensitive information such as passwords, bank details or personal information." 
+            "description": "Phishing attacks use social engineering to trick users into obtaining sensitive information such as passwords, bank details or personal information.",
+            "situation": "Imagine receiving an email that looks like it's from your bank or a well-known store, asking you to click a link to - verify your account or see a -special offer.- **Phishing is exactly that: a digital bait.** Attackers impersonate trusted entities to **trick you into giving away sensitive information**, such as passwords, bank details, or personal data. If you fall for it, they can access your accounts, steal your identity, or your money. Always double-check the sender and links before clicking.",
+            "image":"image1.webp"
         },
         {
             "index": 2,
             "name": "Ransomware",
-            "description": "This type of malware encrypts a user's data and demands a ransom in exchange for the decryption key." 
+            "description": "This type of malware encrypts a user's data and demands a ransom in exchange for the decryption key.", 
+            "situation": "Think about your most important files (photos, documents, work) and suddenly you can't open them. You see a message saying they're 'held hostage' and asking for money to get the decryption key. That's **ransomware**. It's a type of malicious software that **encrypts your data**, making it inaccessible, and then demands a **ransom** (usually in cryptocurrency) to give you the key and restore access. Paying doesn't always guarantee file recovery, which is why having backups is crucial.",
+            "image":"image2.webp"
         },
          {
             "index": 3,
             "name": "Denial of Service (DoS)/DDoS ",
-            "description": "They consist of overloading a system or network with malicious traffic, preventing legitimate users from accessing services." 
+            "description": "They consist of overloading a system or network with malicious traffic, preventing legitimate users from accessing services." ,
+            "situation": "Imagine a very popular online store receiving millions of customers all at once, more than it can handle. Its website would crash. A **DoS or DDoS attack** does something similar: it aims to **overload a website, server, or service** with a massive amount of fake traffic. The goal is to make the service so slow or completely unresponsive, **preventing legitimate users from accessing it**. DDoS attacks are more powerful because they use many computers simultaneously (often infected ones) to launch the attack.",
+            "image":"image3.webp"
         },
          {
             "index": 4,
             "name": "Injection attacks",
-            "description": "Attackers insert malicious code into an application to manipulate the database, execute unauthorized code or cause outages." 
+            "description": "Attackers insert malicious code into an application to manipulate the database, execute unauthorized code or cause outages." ,
+            "situation": "Think about a form on a web page where you enter your name. An **injection attack** occurs when a cybercriminal doesn't enter their name, but instead **malicious code** into that space. If the page isn't well protected, the system behind it can 'execute' that code, as if it were a valid instruction. This allows attackers to **manipulate databases**, steal sensitive information, modify data, or even take control of parts of the system. The most common type is SQL Injection.",
+            "image":"image4.webp"
         },
          {
             "index": 5,
             "name": "Man-in-the-middle (MITM)",
-            "description": "An attacker intercepts communication between two systems and can read, modify or steal transmitted data." 
+            "description": "An attacker intercepts communication between two systems and can read, modify or steal transmitted data." ,
+            "situation":"Imagine you're talking to someone, but without knowing it, a third person is right in the middle of the conversation, listening to everything or even changing what you say before it reaches the other person. An **MITM attack** does this in the digital world: **an attacker intercepts the communication** between two systems (for example, on an insecure public Wi-Fi network). This way, they can **read your data**, modify it without your knowledge, or steal your confidential information, like passwords or banking details.",
+            "image":"image5.webp"
         },
          {
             "index": 6,
             "name": "Malware",
-            "description": "Malicious software designed to damage, disrupt or access computer systems without the user's knowledge." 
+            "description": "Malicious software designed to damage, disrupt or access computer systems without the user's knowledge." ,
+            "situation":"**Malware is the general term for any 'malicious software.'** It's a computer program specifically designed to cause harm. This includes **viruses** (which replicate and spread) and **Trojans** (which appear harmless but hide something bad), as well as **worms** (which spread through networks) and **spyware** (which spies on you). Malware can steal your data, corrupt your files, slow down your computer, or even take control of your device without your knowledge.",
+            "image":"image6.webp"
         },
         {
             "index": 7,
             "name": "Insider threats",
-            "description": "Arise from employees or contractors with access to systems and data who abuse this access intentionally or unintentionally."
+            "description": "Arise from employees or contractors with access to systems and data who abuse this access intentionally or unintentionally.",
+            "situation":"Not all dangers come from outside. An **insider threat** originates from someone who already has **legitimate access** to a company's or organization's systems and data. This could be a current or former employee, a contractor, or a trusted partner. This person can abuse their access **intentionally** (to steal or damage) or **unintentionally** (due to error, negligence, or falling for a trick). They are difficult to detect because they come 'from within.",
+            "image":"image7.webp"
         },
         {
             "index": 8,
             "name": "Supply chain",
-            "description": "Attack suppliers or partners to compromise the security of a target organization through their business relationships."
+            "description": "Attack suppliers or partners to compromise the security of a target organization through their business relationships.",
+            "situation":"Imagine a company that is very secure, but one of its software or service providers has a security breach. A **supply chain attack** exploits this weakness. Cybercriminals **attack a supplier or partner to, through them, reach the target organization they are interested in**. It's like trying to open the main door, they can't, but they sneak in through the service door connected to the same building. This can affect thousands of companies at once if a widely used provider is compromised.",
+            "image":"image8.webp"
         },
         {
             "index": 9,
             "name": "Server-side request forgery (SSRF)",
-            "description": "An attacker exploits a vulnerability in a web application or API to make unauthorized requests from the server to other systems."
+            "description": "An attacker exploits a vulnerability in a web application or API to make unauthorized requests from the server to other systems.",
+            "situation":"Imagine a web page has a function that allows the server to 'request' information from another web address (e.g., to load an image from another site). An **SSRF vulnerability** allows an attacker to **trick the server** into making requests to places it shouldn't. Instead of an image, the attacker could make the server request information from internal systems (which you wouldn't have direct access to) or attack other websites, **using the server itself as their 'accomplice' without its knowledge.",
+            "image":"image9.webp"
         },
         {
             "index":10,
             "name": "Insecure API consumption",
-            "description": "APIs can be vulnerable if security measures are not properly implemented, which can lead to data exposure or manipulation by attackers"
+            "description": "APIs can be vulnerable if security measures are not properly implemented, which can lead to data exposure or manipulation by attackers",
+            "situation":"**APIs (Application Programming Interfaces)** are like 'doors' that allow different programs or services to communicate with each other (e.g., a weather app getting data from an external server). **Insecure API consumption** occurs when these 'doors' are not well protected. If developers don't implement adequate security measures, attackers can **exploit these APIs to steal data**, manipulate information, or even take control of important functionalities. It's crucial that APIs are well protected, as they are the bridge between many systems.",
+            "image":"image10.webp"
         }
     ]
 }
