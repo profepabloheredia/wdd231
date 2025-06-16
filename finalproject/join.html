@@ -21,14 +21,10 @@
     
     <link rel="icon" href="../finalproject/favicon-32x32.png">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/threats.js" defer></script> 
-    <script src="scripts/partners.js" defer></script>
+   
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/welcome.js" defer></script>
-    <script type="module" src="scripts/events.js" ></script>
-    <!-- <script src="scripts/nistApi.js" defer></script> -->
-    
-
+ 
+   
 </head>
 
 <body>
@@ -42,22 +38,32 @@
             <a href="../finalproject/final.html">Home</a>
             <a href="../finalproject/threats.html">Theats</a>
             <a href="../finalproject/prevention.html">Prevention</a>
-            <a href="../finalproject/join.html">Join</a>
+            
         </nav>
         
     </header>
 
     <main>
-      
-    <section class="form-login">
-      <h5>Log In</h5>
-      <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-      <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
-      <input class="buttons" type="submit" name="" value="Ingresar">
-      <p><a href="#">¿forgot Password?</a></p>
-
-    </section>
-
+        <div class="hero">
+            <!-- <img src="../finalproject/images/hero-image-landscape3.webp" alt="hero-image" loading="lazy">
+         -->
+       </div>
+        <section class="form-sign-in">
+                    <h5>Sign In</h5>
+                    <form method="GET" action="thankyou.html" class="designForm">
+                        <label>Name * <input class="controls" type="text" name="first" required  title=" Full Name"></label>
+                        <label>Email * <input class="controls" type="email" name="email" required placeholder="peter1234@mydomain.com"  title="Your Email" autocomplete="email"></label>
+                        <label>Cell Phone * <input class="controls" type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="012-345-6789" required></label>
+                        <label>Business/Organization's Name <input class="controls" type="text" name="organization" required autocomplete="organization" title="Your Organization Name"></label>
+                    
+                        <div class="buttons">              
+                            <input  type="submit" value=" Join to Us" class="submit">
+                        </div>  <label><input type="hidden" name="currentTime"  id="currentTime"></label>       
+                    </form>
+               
+        
+        </section>
+     
 
     </main>
 

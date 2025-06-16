@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pablo Heredia">
     <meta name="description" content="CYBER THREATS PREVENTION final project WDD231 - Pablo A. Heredia">
-    <title>Cyber Threats Prevention - Threats</title> 
-    
+    <title>Cyber Threats Prevention - Pablo A. Heredia</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,21 +14,14 @@
 
     <link rel="stylesheet" href="../finalproject/styles/normalice.css">
     <link rel="stylesheet" href="../finalproject/styles/base.css">
-    <link rel="stylesheet" href="../finalproject/styles/threats.css">
+    <link rel="stylesheet" href="../finalproject/styles/medium.css">
     <link rel="stylesheet" href="../finalproject/styles/larger.css">
     
     <link rel="icon" href="../finalproject/favicon-32x32.png">
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/threats.js" defer></script> 
-    <script src="scripts/partners.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-   
-    
-    <!-- <script src="scripts/nistApi.js" defer></script> -->
-    
-    <!-- some troubles ocurr with partners -->
-    
-
+    <script src="scripts/date.js" defer></script>   
+    <script src="scripts/thankyou.js" defer></script>
+  
 </head>
 
 <body>
@@ -43,47 +35,25 @@
             <a href="../finalproject/final.html">Home</a>
             <a href="../finalproject/threats.html">Theats</a>
             <a href="../finalproject/prevention.html">Prevention</a>
-            <a id="joinLink" href="../finalproject/join.html">Join</a>
+           
         </nav>
         
     </header>
 
     <main>
-        <div class="hero">
-            <img src="../finalproject/images/hero-image-landscape3.webp" alt="hero-image" loading="lazy">
-            <button type="button" id="joinButton" class="hero-button" onclick="location.href='join.html'">   Join &raquo;</button>
+        <div class="thanks"> 
+            <h1>Thanks for joining</h1>
+            <p>We appreciate you interest in joining. We are sending your application by e-mail.</p>
         </div>
-        <h2><a href="./final.html">Home</a> > Threats</h2>
-        <h4>This site will help you to know about threats caracteristics.</h4>
-        <div class="all-threats">
-          
-            <section class="info" id="threats">
-                <h2>Recognizing main Threats</h2>
-                <div id="all-threats-list">
-                    <!-- <h3 id="score"></h3>
-                    <p id="description"></p>
-                    <p id="cveID"></p> -->
-                </div>
-                <div class="threats-link-page"><a href="./threats.html">Go to Threats Page</a></div>
-                
-            </section>
-          
+        
+        <div id="results"></div>
+        <div>
+            <br>
+            <h4><a href="./final.html">Return Home</a></h4>
         </div>
-       
-        <div class="grid" id="partners"></div>
-
     </main>
 
-    <!-- Welcome Modal Structure -->
-    <div id="welcomeModalOverlay" class="modal-overlay">
-        <div id="welcomeModal" class="welcome-modal">
-            <button class="modal-close-button" id="closeModalButton">&times;</button>
-            <h2>Welcome to Cyber Threats  Prevention!</h2>
-            <p>Your guide to understanding and preventing cyber threats. Sign in to personalize your experience and access exclusive content.</p>
-            <button class="modal-button" id="signInButton" onclick="location.href='join.html'">Join</button>
-        </div>
-    </div>
-   
+    
     <footer>
         <div class="divFooter">
             <div id="contact">
@@ -114,4 +84,3 @@
     </footer>
 </body>
 
-</html>

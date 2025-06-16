@@ -137,8 +137,9 @@ h1 {
     top: 0;
     left: 0;
 }
-.hide-button{
+.hide-join{
     display: none;
+    
 }
 
 
@@ -253,7 +254,7 @@ main a:hover{
     justify-content: center;
     align-items: center;
     z-index: 1000; /* Ensure it's on top */
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
@@ -306,7 +307,7 @@ main a:hover{
     background: none;
     border: none;
     font-size: 1.8em;
-    color: var(--text-subtle);
+    color: white;
     cursor: pointer;
     line-height: 1;
     transition: color 0.2s ease-in-out;
