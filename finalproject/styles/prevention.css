@@ -1,13 +1,4 @@
-/* body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; 
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            padding: 2rem;
-            box-sizing: border-box;
-        } */
+
         .container {
             background-color: #ffffff;
             border-radius: 1.5rem; /* More rounded corners */

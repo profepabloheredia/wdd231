@@ -252,11 +252,12 @@ main a:hover{
     margin: .5%;
 }
 
-    
-
-
 /*** HOME prevention section ***/
 .prevention-link-page {text-align: center;}
+.prevention-image{
+    width: 300px;
+    height: auto;
+}
 
 /***  welcome section**** Welcome Modal Styles */
 .modal-overlay {
