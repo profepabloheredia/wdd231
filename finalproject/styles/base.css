@@ -128,8 +128,8 @@ h1 {
     height: auto;
     padding: .5rem;
     position: absolute;
-    left: 3%;
-    bottom: 5%;
+    color: var(--primary-color);
+    top:  130px;
 }
 @keyframes colorChange {
     0% {background-color: #aebb1a;    }
