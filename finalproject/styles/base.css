@@ -126,12 +126,12 @@ h1 {
 #userName{
     width: auto;
     height: auto;
-    margin: 0%;
+    margin: 0 10px 0 0;
     padding: .2rem;
     /* position: absolute; */
     color:var(--accent-color2);
     /* top:  120px; */
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-family: var(--secondary-font);
     font-weight: 400;
     text-align: right;
