@@ -130,6 +130,9 @@ h1 {
     position: absolute;
     color: var(--primary-color);
     top:  130px;
+    font-size: 1.3em;
+    font-family: var(--secondary-font);
+    font-weight: 400;
 }
 @keyframes colorChange {
     0% {background-color: #aebb1a;    }
