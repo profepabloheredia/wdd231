@@ -128,9 +128,7 @@ h1 {
     height: auto;
     margin: 0 10px 0 0;
     padding: .2rem;
-    /* position: absolute; */
     color:var(--accent-color2);
-    /* top:  120px; */
     font-size: 1.1em;
     font-family: var(--secondary-font);
     font-weight: 400;
@@ -171,13 +169,11 @@ main>h2, main>h4{
 .info {
     padding: 0;
     margin: 5px;
-    /* border: 1px solid var(--tertiary-color);  */
-    /* box-shadow: 0 0 10px #aaa; */
-     border: solid;
+    border: solid;
     border-width: 1px;
     border-radius:0 0 10px 10px;
 }
-.info h2 {
+.info>h2 {
     background-color: var(--secondary-color);
     color: white;
     margin: 0;
@@ -250,11 +246,17 @@ main a:hover{
     cursor: pointer;
     
 }
-.threats-link-page{
+.link-pages {
     text-align: center;
     padding: .3rem;
     margin: .5%;
 }
+
+    
+
+
+/*** HOME prevention section ***/
+.prevention-link-page {text-align: center;}
 
 /***  welcome section**** Welcome Modal Styles */
 .modal-overlay {

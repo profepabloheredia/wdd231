@@ -23,7 +23,7 @@ function show(cup) {
 
 const Info = document.querySelector('#results')
 Info.innerHTML = `
-<p>Application from <i><b>${show('first')} ${show('last')}</i></b></p>
+<p>Application from <i><b>${show('first')} </i></b></p>
 <p>Organization Name: <i><b>${show('organization')} </i></b></p>
 <p>Your Phone: <i><b>${show('phone')} </i></b></p>
 <p>Your email <i><a href="mailto:${show('email')}">${show('email')}</a> </i></p>
@@ -33,7 +33,7 @@ Info.innerHTML = `
 
 //Save the joined state into a co0kie
 document.cookie = "joinedCyberThreatsPrevention=true; path=/";
-document.cookie = `joinedUserName=${show('first')} ${show('last')}; path=/`;
+document.cookie = `joinedUserName=${show('first')}; path=/`;
 
 //<p>Form was submitted on <i><b>${show('currentTime')}</i></b></p>
 

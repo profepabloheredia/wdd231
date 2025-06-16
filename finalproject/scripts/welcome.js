@@ -5,10 +5,16 @@ window.onload = function() {
             const joinButton = document.getElementById('joinButton');
             const joinLink = document.getElementById('joinLink');
             const JoinedUserName = document.getElementById('userName');
+            
+
+
+            JoinedUserName.textContent=""; //clear user name
 
             // Check if the site has been visited before
             
             const hasVisited = localStorage.getItem('visitedCyberThreatsPrevention');
+            
+            
             console.log("visited: " + hasVisited);
 
             if (!hasVisited) {
@@ -30,19 +36,19 @@ window.onload = function() {
                     break;
                 }
                 }             
-
-                // const hasJoined = localStorage.getItem('joinedCyberThreatsPrevention');
+                
                 console.log("Joined: " + hasJoined);
 
                 if (hasJoined) {  // If it's not signed up
                 
-                    modalOverlay.classList.add('visible'); //remove when ready
-                
-                    // Set the flag in localStorage
-                    //localStorage.setItem('joinedCyberThreatsPrevention', 'true');
+                    // modalOverlay.classList.add('visible'); //remove when ready
+                    localStorage.setItem('joinedCyberThreatsPrevention', 'true');
                     joinButton.className='hide-join';
                     joinLink.remove();
                     showUserName();
+                    
+                } else{
+                JoinedUserName.textContent="";
                 }
                 modalOverlay.classList.remove('visible');
             }
@@ -84,7 +90,8 @@ window.onload = function() {
                 }
                 }   
                 JoinedUserName.textContent="Welcome :" + userName;
-                
-            }
+               
+            };
+            
         };
         

@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="../finalproject/styles/normalice.css">
     <link rel="stylesheet" href="../finalproject/styles/base.css">
-    <link rel="stylesheet" href="../finalproject/styles/medium.css">
+    <link rel="stylesheet" href="../finalproject/styles/prevention.css">
     <link rel="stylesheet" href="../finalproject/styles/larger.css">
     
     <link rel="icon" href="../finalproject/favicon-32x32.png">
@@ -22,7 +22,7 @@
     
     <script src="scripts/partners.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    
+    <script src="scripts/welcome.js" defer></script>
    
     <!-- <script src="scripts/nistApi.js" defer></script> -->
     
@@ -38,6 +38,7 @@
             <span>Cyber Threats  Prevention </span>
             <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
         </div>
+       <h4 id="userName">UserName</h4>
         <nav id="primary-nav">
             <a href="../finalproject/final.html">Home</a>
             <a href="../finalproject/threats.html">Theats</a>
@@ -53,34 +54,117 @@
             <button type="button" id="joinButton" class="hero-button" onclick="location.href='join.html'">   Join &raquo;</button>
         </div>
         <h2><a href="./final.html">Home</a> > Prevention</h2>
-        <h4>This site will help you to know how Mitigate the threats and all you can do .</h4>
-        <div class="home">
-            <section class="info" id="events">
-                <h2>Upcoming Cybersecurity Events</h2>
-                
-                <div id="eventsList" class="events-list">
-                <!-- Events will be dynamically loaded here -->
-                </div>
-               
-                
-            </section>
-            <section class="info" id="threats">
-                <h2>Recognizing main Threats</h2>
-                <div id="threats-list">
-                    <!-- <h3 id="score"></h3>
-                    <p id="description"></p>
-                    <p id="cveID"></p> -->
-                </div>
-                <div class="threats-link-page"><a href="./threats.html">Go to Threats Page</a></div>
-                
-            </section>
-            <section class="info" id="prevention">
-                <h2>Top Preventive Actions</h2>
-                 <div class="prevent-actions">
-                    
-                </div>
-            </section>
+       
+        <div class="container">
+        <div class="header">
+            <h1>10 Important Actions for Cybersecurity</h1>
+            <p class="text-gray-600 mt-2 text-lg">Protect yourself and your data from cyber threats.</p>
         </div>
+
+        <div class="tip-list">
+            <!-- Tip 1: Use Strong, Unique Passwords and a Password Manager -->
+            <div class="tip-item">
+                <div class="tip-number">1</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/60a5fa/ffffff?text=Strong+Passwords" alt="Strong Passwords" class="tip-image">
+                    <h2>Use Strong, Unique Passwords and a Password Manager</h2>
+                    <p>Create complex passwords using a combination of letters, numbers, and symbols. Avoid reusing passwords across different accounts. Utilize a reputable password manager to securely store and generate strong, unique passwords for all your online services.</p>
+                </div>
+            </div>
+
+            <!-- Tip 2: Enable Multi-Factor Authentication (MFA) -->
+            <div class="tip-item">
+                <div class="tip-number">2</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/34d399/ffffff?text=Multi-Factor+Auth" alt="Multi-Factor Authentication" class="tip-image">
+                    <h2>Enable Multi-Factor Authentication (MFA)</h2>
+                    <p>Add an extra layer of security to your accounts by enabling MFA wherever possible. This typically requires a second form of verification, such as a code from your phone, a fingerprint, or a physical security key, in addition to your password.</p>
+                </div>
+            </div>
+
+            <!-- Tip 3: Keep Software and Operating Systems Updated -->
+            <div class="tip-item">
+                <div class="tip-number">3</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/fcd34d/333333?text=Software+Updates" alt="Software Updates" class="tip-image">
+                    <h2>Keep Software and Operating Systems Updated</h2>
+                    <p>Regularly update your operating system, web browsers, antivirus software, and all other applications. Updates often include critical security patches that fix vulnerabilities attackers could exploit. Enable automatic updates if available.</p>
+                </div>
+            </div>
+
+            <!-- Tip 4: Be Wary of Phishing Scams -->
+            <div class="tip-item">
+                <div class="tip-number">4</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/ef4444/ffffff?text=Phishing+Scams" alt="Phishing Scams" class="tip-image">
+                    <h2>Be Wary of Phishing Scams</h2>
+                    <p>Exercise caution with unsolicited emails, messages, or phone calls that ask for personal information or prompt you to click on suspicious links or open attachments. Always verify the sender's legitimacy before interacting. When in doubt, delete it.</p>
+                </div>
+            </div>
+
+            <!-- Tip 5: Back Up Your Data Regularly -->
+            <div class="tip-item">
+                <div class="tip-number">5</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/a78bfa/ffffff?text=Data+Backup" alt="Data Backup" class="tip-image">
+                    <h2>Back Up Your Data Regularly</h2>
+                    <p>Routinely back up your important files and data to an external hard drive or a secure cloud storage service. This protects you from data loss due to hardware failure, accidental deletion, or ransomware attacks.</p>
+                </div>
+            </div>
+
+            <!-- Tip 6: Use Antivirus/Anti-Malware Software -->
+            <div class="tip-item">
+                <div class="tip-number">6</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/22d3ee/ffffff?text=Antivirus+Software" alt="Antivirus Software" class="tip-image">
+                    <h2>Use Antivirus/Anti-Malware Software</h2>
+                    <p>Install and maintain reputable antivirus and anti-malware software on all your devices. Keep it updated and run regular scans to detect and remove malicious software that could compromise your system.</p>
+                </div>
+            </div>
+
+            <!-- Tip 7: Secure Your Home Wi-Fi Network -->
+            <div class="tip-item">
+                <div class="tip-number">7</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/fb923c/ffffff?text=Secure+Wi-Fi" alt="Secure Wi-Fi" class="tip-image">
+                    <h2>Secure Your Home Wi-Fi Network</h2>
+                    <p>Change the default password of your router to a strong, unique one. Enable WPA2 or WPA3 encryption. Consider using a VPN (Virtual Private Network) for an added layer of security, especially when using public Wi-Fi.</p>
+                </div>
+            </div>
+
+            <!-- Tip 8: Be Careful What You Share Online -->
+            <div class="tip-item">
+                <div class="tip-number">8</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/8b5cf6/ffffff?text=Think+Before+Sharing" alt="Think Before Sharing" class="tip-image">
+                    <h2>Be Careful What You Share Online</h2>
+                    <p>Think twice before sharing personal information on social media or other public platforms. Cybercriminals can use this information for identity theft, targeted phishing attacks, or social engineering schemes.</p>
+                </div>
+            </div>
+
+            <!-- Tip 9: Lock Your Devices -->
+            <div class="tip-item">
+                <div class="tip-number">9</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/d946ef/ffffff?text=Lock+Devices" alt="Lock Devices" class="tip-image">
+                    <h2>Lock Your Devices</h2>
+                    <p>Always lock your computer, smartphone, and tablet when you step away from them. Use strong PINs, passwords, or biometric authentication (fingerprint/face ID) to prevent unauthorized access.</p>
+                </div>
+            </div>
+
+            <!-- Tip 10: Monitor Your Accounts and Statements -->
+            <div class="tip-item">
+                <div class="tip-number">10</div>
+                <div class="tip-content">
+                    <img src="https://placehold.co/400x150/10b981/ffffff?text=Monitor+Accounts" alt="Monitor Accounts" class="tip-image">
+                    <h2>Monitor Your Accounts and Statements</h2>
+                    <p>Regularly check your bank statements, credit card reports, and online account activity for any suspicious or unauthorized transactions. Report any discrepancies immediately to the relevant financial institution or service provider.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+       
        
         <div class="grid" id="partners"></div>
 
