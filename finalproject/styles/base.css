@@ -128,8 +128,8 @@ h1 {
     height: auto;
     padding: .5rem;
     position: absolute;
-    color: var(--primary-color);
-    top:  130px;
+    color:var(--accent-color2);
+    top:  120px;
     font-size: 1.3em;
     font-family: var(--secondary-font);
     font-weight: 400;
