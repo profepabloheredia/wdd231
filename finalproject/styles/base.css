@@ -106,7 +106,7 @@ h1 {
     height:auto;
     display: block;    
 }
-.hero-button {
+.hero-button  {
     width: auto;
     height: auto;
     padding: .5rem;
@@ -122,6 +122,14 @@ h1 {
     cursor: pointer;
     border-radius: 25%; 
     animation: colorChange 1s infinite alternate linear;
+}
+#userName{
+    width: auto;
+    height: auto;
+    padding: .5rem;
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
 }
 @keyframes colorChange {
     0% {background-color: #aebb1a;    }
