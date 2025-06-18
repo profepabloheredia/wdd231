@@ -427,8 +427,8 @@ footer>div>div>p {
     background-color: var(--primary-color);      
 } 
 #socials>a>img {
-    width: 40px;
-    height: auto;
+    /* width: 40px;
+    height: auto; */
     border: none;
     margin: 0%;
     padding: 0%;
