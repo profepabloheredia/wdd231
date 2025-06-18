@@ -23,9 +23,7 @@ const displayThreats = (array) => {
     if (document.title === page) {
 
         showAllThreat(array)
-        // const length=array.length;
-        // for (let step = 0; step < length; step++) {showAllThreat(array[step])}      
-        // console.log(length);
+  
 
     } else {
        const length = 5; //How many threats is shown in home page
@@ -35,11 +33,7 @@ const displayThreats = (array) => {
         
 }
 
-// const displayThreats = (array) => {
-//     for (let step = 0; step < 5; step++) {
-//     showThreat(array[step])
-//     }
-// }
+
 
 function showThreat(threat) {
     const threatBlock = document.createElement('section')
@@ -59,8 +53,6 @@ function showThreat(threat) {
 }
 
 
-
-
 const allThreatsList= document.querySelector('#all-threats-list');
 
 //**********threats long verion for threat page********* */
@@ -73,8 +65,7 @@ function showAllThreat(threat){
         let name = document.createElement("h3");
         let description = document.createElement('p');
         let situation = document.createElement('p');
-        // let phone = document.createElement("p");
-        // let memberUrl = document.createElement("p");
+     
         let image = document.createElement('img');
 
         card.setAttribute('class', 'card3');
@@ -83,9 +74,6 @@ function showAllThreat(threat){
         name.textContent = `${member.index} - ${member.name}`;
         description.textContent = `DESCRIPTION: ${member.description}`;
         situation.textContent = `EXAMPLE: ${member.situation}`;
-     
-        // phone.textContent = `PHONE: ${member.phone}`;
-        // memberUrl.textContent = `URL: ${member.url}`;
 
         // Build the image by setting all the relevant attributes
               
@@ -100,8 +88,6 @@ function showAllThreat(threat){
         card.appendChild(description);
         card.appendChild(image);
         card.appendChild(situation);
-        // card.appendChild(phone);
-        // card.appendChild(memberUrl);
         allThreatsList.appendChild(card);
 
     });
