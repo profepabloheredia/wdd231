@@ -35,7 +35,7 @@
         .tip-number {
             font-size: 1.75rem; /* Larger number */
             font-weight: 700;
-            color: #4299e1; /* Blue color for numbers */
+            color: #0f314d; /* Blue color for numbers */
             margin-right: 1.25rem;
             flex-shrink: 0;
             width: 2.5rem; /* Fixed width for alignment */
