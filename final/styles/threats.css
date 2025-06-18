@@ -30,6 +30,13 @@
     padding:0 1rem 0 1rem ;
     margin :.5rem;
 }
+@media (max-width: 700px) {
+  #all-threats-list>section {
+    display: flex;
+    flex-direction: column;
+   
+    }
+}
 /* .card3>button {
     grid-area: button;
     height: 25px;width: 100px;
