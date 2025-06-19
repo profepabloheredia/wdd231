@@ -1,3 +1,5 @@
+// ****** NOT IN USE*****
+
 // select HTML elements in the document
 const cveID= document.querySelector('#cveID');
 const description = document.querySelector('#description');

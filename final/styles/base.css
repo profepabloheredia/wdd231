@@ -57,7 +57,7 @@ nav {
     display: flex;
     justify-content: right;
 }
-nav a {
+nav a{
     padding:0 .3rem .3rem  .3rem;
     margin: 6px;
     text-decoration: none;
@@ -106,7 +106,7 @@ h1 {
     height:auto;
     display: block;    
 }
-.hero-button  {
+.hero-button {
     width: auto;
     height: auto;
     padding: .5rem;
@@ -123,6 +123,7 @@ h1 {
     border-radius: 25%; 
     animation: colorChange 1s infinite alternate linear;
 }
+
 #userName{
     width: auto;
     height: auto;
@@ -435,7 +436,17 @@ footer>div>div>p {
 } 
 
 
+.video{text-align: center;padding: 1.5rem;}
+.video>a{
 
+    border: 1px solid 0;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    animation: colorChange 1s infinite alternate linear;
+}
 
 
 /***** small viewports  ****/

@@ -34,7 +34,6 @@ const displayThreats = (array) => {
 }
 
 
-
 function showThreat(threat) {
     const threatBlock = document.createElement('section')
     threatBlock.className='card2'
