@@ -79,8 +79,8 @@ function showAllThreat(threat){
         image.setAttribute('src', `images/${member.image}`);
         image.setAttribute('alt', `${member.image}`); 
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '200');
-        image.setAttribute('height', 'auto');
+        image.setAttribute('width', '250');
+        image.setAttribute('height', '200');
 
         // Append the section(card) with the created elements
         card.appendChild(name); 
