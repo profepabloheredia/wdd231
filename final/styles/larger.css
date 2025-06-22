@@ -48,10 +48,7 @@
         grid-template-columns: 1fr 1fr;
 
     }
-     #levelDialog {width: 700px;}
-   
-
-     
+    #levelDialog {width: 700px;}
 
 }
 @media (min-width: 1000px) {

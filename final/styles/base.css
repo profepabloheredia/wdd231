@@ -1,9 +1,7 @@
 :root {
     --primary-color: white;
-    /* --secondary-color: rgb(42, 8, 73); */
     --secondary-color: rgb(56, 37, 73);
     --tertiary-color: rgb(233, 230, 230);
-    /* --tertiary-color: rgb(204, 202, 202); */
     --button-background-color:rgb(88, 87, 87);
     --nav-background-color: rgb(240, 234, 234);
     --list-completed-color: #ece036;
@@ -154,9 +152,6 @@ h1 {
     display: none;
     
 }
-
-
-
 
 /************* HOME SECTION  ************/
 .home>section{
@@ -355,7 +350,7 @@ main a:hover{
     justify-items: center;
     max-height: 250px; 
     display: grid;
-    /* grid-template-rows: 47px 31px 85px  25px 25px 25px; */
+ 
     grid-template-areas: 
         "image"  
         "name"
@@ -381,8 +376,7 @@ main a:hover{
     margin: 0;
     border-radius: 10px;
 }
-/* .cardDescription{ grid-area: description;} */
-/* .card h5 {grid-area: type;} */
+
 .card a {grid-area: wPage;}
 .card a:hover{font-size: larger;font-style: italic;}
 .cardLevel{grid-area: level;}
@@ -428,8 +422,7 @@ footer>div>div>p {
     background-color: var(--primary-color);      
 } 
 #socials>a>img {
-    /* width: 40px;
-    height: auto; */
+   
     border: none;
     margin: 0%;
     padding: 0%;
@@ -503,11 +496,6 @@ footer>div>div>p {
         gap: 8px;
     }
     footer>div>div>p {text-align: center;}
-
-  
-   /* .hero-button{
-    display:none;
-   } */
 }
 
 

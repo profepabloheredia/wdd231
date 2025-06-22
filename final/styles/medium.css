@@ -10,12 +10,7 @@
         "button "
         
       }
-      /* grid-template-areas: 
-        "name name" 
-        "photograph description"
-        "photograph location"
-        "button button button"
-      } */
+    
       #places div img {
         width: 300px;
         height: auto;

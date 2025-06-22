@@ -14,8 +14,6 @@ main{
  
 
 }
-
-
 .form-sign-in {
   position: relative;
   width: 300px;
@@ -28,7 +26,6 @@ main{
   padding: 20px 30px;
   border-top: 4px solid #017bab;
   color: white;
-  
 }
 
 .form-sign-in h5 {

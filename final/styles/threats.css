@@ -1,7 +1,6 @@
 /*** HOME threats section ***/
 
 
-
 #all-threats-list>section {
     display:grid;
     grid-template-columns: 1fr 2fr;
@@ -9,17 +8,13 @@
     box-shadow: 0 0 2px brown;
     align-items: center;
     justify-content: center;
-   
     padding: .5rem;
-   
 }
 .card3>h3{
     grid-area: name;
     padding: .2rem;
     margin: .2rem;
     color: var(--accent-color);
-   
-
 }
 .card3>img{
     justify-self: center;
@@ -35,23 +30,5 @@
   #all-threats-list>section {
     display: flex;
     flex-direction: column;
-   
     }
 }
-/* .card3>button {
-    grid-area: button;
-    height: 25px;width: 100px;
-    border-radius: 10px;
-    border: none;
-}
-.card3>button:hover{
-    background-color: var(--accent-color);
-    color: #fff;
-    cursor: pointer;
-    
-}
-.threats-link-page{
-    text-align: center;
-    padding: .3rem;
-    margin: .5%;
-} */
