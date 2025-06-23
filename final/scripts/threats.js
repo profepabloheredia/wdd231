@@ -110,4 +110,4 @@ function showAllThreat(threat){
 function learnMore(text) {alert(text);}
 
    
-   getThreats();
+getThreats();

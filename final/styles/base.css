@@ -251,7 +251,7 @@ main a:hover{
 /*** HOME prevention section ***/
 .prevention-link-page {text-align: center;}
 .prevention-image{
-    width: 300px;
+    width: auto;
     height: auto;
 }
 
