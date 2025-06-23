@@ -91,21 +91,7 @@ function showAllThreat(threat){
 
     });
 }
-//     const threatBlock = document.createElement('section')
-//     threatBlock.className='card3'
-    
-//     const index= document.createElement('h3')
-//     index.innerHTML = `Top ${threat.index}   - <b>${threat.name}</b>`
-//     threatBlock.appendChild(index)
 
-//     const btn= document.createElement('button')
-//     btn.innerHTML = "Learn More"
-//     btn.onclick = `learnMore("${threat.description}")`
-//     btn.setAttribute('onClick', `learnMore("${threat.name}: ${threat.description}")`);
-//     threatBlock.appendChild(btn)
-    
-//     threatsList.appendChild(threatBlock)
-// }
 //********** button learn more action threats page********* */
 function learnMore(text) {alert(text);}
 
