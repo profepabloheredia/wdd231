@@ -29,7 +29,7 @@ header {
     align-items: center;
 }
 /*** profile settings (img span and button) ***/
-#profile {
+.profile {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -396,7 +396,7 @@ footer {
     padding: 1rem;
     width: 100%;
 }
-footer>div{
+.divFooter {
     justify-content:center;
 }    
 footer>div>div>p {
@@ -490,7 +490,7 @@ footer>div>div>p {
         box-shadow: 0 0 5px 2px var(--secondary-color);
     }
     
-    footer>div {
+    .divFooter {
         display: flex;
         flex-direction: column;
         gap: 8px;
